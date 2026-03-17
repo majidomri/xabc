@@ -1,0 +1,58 @@
+# Xavio — India's #1 Social Commerce Platform
+
+## What is Xavio?
+
+Xavio is a social commerce mobile application built for India. It enables users to monetize their social media stories by tagging products and earning commissions, open free online storefronts, run creator-affiliate campaigns, and place story-format advertisements.
+
+## Core Value Propositions
+
+- **Creators** earn an average of ₹50,000/month by posting stories and tagging affiliate products. Commission rate: 25% per sale. Payout via UPI within 24 hours.
+- **Sellers** open free storefronts in 5 minutes, reach 2.4M+ buyers, and get paid instantly via UPI. Zero listing fees.
+- **Merchants** list their product catalogue and let 2.4M+ creators promote it as affiliates. Pay commission only on confirmed sales. Average 80% lower CAC vs Facebook ads.
+- **Advertisers** run story ads with average 10x ROAS. Targeting by niche, city, age, and purchase intent. CPM from ₹5.
+
+## Key Facts
+
+- Platform: Mobile app (iOS + Android)
+- Users: 2.4M+ active users
+- Creators: 2.4M+ registered creators
+- Sellers: 50,000+ active sellers
+- Merchants: 8,000+ verified merchants
+- Total creator payouts: ₹240 Cr+
+- Average creator earnings at 90 days: ₹50,000/month
+- Payment methods: UPI, cards, net banking, wallets
+- Payout speed: 24 hours
+- Country: India
+
+## Pages
+
+- Home: https://xavio.in/
+- For Creators: https://xavio.in/for-creators
+- For Sellers: https://xavio.in/for-sellers
+- For Merchants: https://xavio.in/for-merchants
+- For Advertisers: https://xavio.in/for-advertisers
+
+## Frequently Asked Questions
+
+**Q: How do creators earn on Xavio?**
+A: Creators post stories, tag products from the Xavio affiliate catalogue, and earn 25% commission on every sale made through their story link. Payouts are processed within 24 hours via UPI.
+
+**Q: Is Xavio free to use?**
+A: Yes. The Starter plan is free forever for creators, sellers, and merchants. No credit card required. Premium plans start at ₹299/month for advanced features.
+
+**Q: How is Xavio different from Instagram Shopping or Meesho?**
+A: Xavio is built specifically for story-based commerce with instant UPI payouts, a creator-affiliate network, and a self-serve ad platform — all in one app. Instagram Shopping requires a Facebook Business account and doesn't support direct UPI payouts. Meesho is reseller-only with no creator monetization.
+
+**Q: What is the minimum followers needed to earn on Xavio?**
+A: No minimum. Creators with 500 followers earn on Xavio. Engagement and niche relevance matter more than follower count.
+
+## Contact
+
+- Website: https://xavio.in
+- Support: support@xavio.in
+- Business: business@xavio.in
+- Press: press@xavio.in
+
+## Company
+
+Xavio Technologies Pvt. Ltd., India. Founded 2024.
