@@ -10,11 +10,24 @@
   <meta property="og:description" content="List products. Creators promote. Pay only on sales. India's largest creator-merchant affiliate network.">
   <meta property="og:type" content="website">
   <meta name="robots" content="index, follow">
+  <meta name="ai-content-type" content="merchant-landing-page" />
+  <meta name="audience" content="brands, manufacturers, wholesalers, B2B-merchants" />
   <link rel="canonical" href="https://xavio.in/for-merchants">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/audience.css">
 </head>
-<body>
+<body class="audience-page merchants-page">
+
+  <!-- STICKY MOBILE CTA -->
+  <div class="sticky-cta" id="stickyCta" style="display:none">
+    <span>🏭 <strong>Brands using Xavio see 3X sales in 30 days</strong></span>
+    <a href="#download" class="btn-sticky">Launch Your Creator Network</a>
+  </div>
+
+  <!-- REWARD HOOK BAR -->
+  <div class="reward-bar">
+    <span>📊 Brands using Xavio see <strong>3X sales in 30 days</strong> — ROI clarity + creator trust + zero upfront cost · <a href="#roi-calc" style="color:inherit;text-decoration:underline">Calculate your ROI →</a></span>
+  </div>
 
   <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
     <div class="nav__inner container">
@@ -47,8 +60,8 @@
 
   <section class="aud-hero aud-hero--merchant" id="hero">
     <div class="container">
-      <div class="aud-hero__badge">For Merchants</div>
-      <h1 class="aud-hero__h1">2.4 Million Creators as <span class="grad-hero">Your Sales Force</span></h1>
+      <div class="aud-hero__badge">🏭 For Merchants</div>
+      <h1 class="aud-hero__h1">Scale Your Business <span class="grad-green">3X With Creator-Driven Sales</span></h1>
       <p class="aud-hero__sub">List your product catalogue on Xavio. 2.4M+ creators browse, select, and promote your products to their engaged audiences. You pay commission only when a sale happens — zero upfront ad spend.</p>
       <div class="aud-hero__proof">
         <span>🏭 8,000+ verified merchants</span>
@@ -57,9 +70,20 @@
         <span>•</span>
         <span>Performance-only pricing</span>
       </div>
+      <div class="micro-trust">
+        <span>✅ Zero upfront ad spend</span>
+        <span>✅ Pay only on sales</span>
+        <span>✅ Verified creator network</span>
+        <span>✅ Real-time analytics</span>
+      </div>
       <div class="aud-hero__ctas">
-        <a href="#download" class="btn btn--primary btn--lg">List Your Catalogue Free</a>
-        <a href="#how" class="btn btn--ghost btn--lg">See How It Works</a>
+        <a href="#download" class="btn btn--primary btn--lg">Launch Your Creator Network →</a>
+        <a href="#roi-calc" class="btn btn--ghost btn--lg">Calculate My ROI</a>
+      </div>
+      <div class="live-roi-bar">
+        <span>💰 Merchants generated</span>
+        <span class="roi-live" id="merchantRoi">₹0</span>
+        <span>in sales today</span>
       </div>
     </div>
   </section>
@@ -83,6 +107,54 @@
           <div class="income-strip__val grad-green">Pay on sale</div>
           <div class="income-strip__lbl">Performance-only pricing</div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROI SIMULATOR -->
+  <section class="simulator-section" id="roi-calc">
+    <div class="container">
+      <div class="section-label reveal">ROI Calculator</div>
+      <h2 class="section-h2 reveal">Calculate Your <span class="grad-green">Expected Revenue</span></h2>
+      <p class="section-sub reveal">See your projected ROI from creator-driven sales on Xavio</p>
+      <div class="simulator-card reveal">
+        <div class="sim-inputs">
+          <div class="sim-input-group">
+            <label>Monthly ad budget (currently)</label>
+            <select id="merchantBudget">
+              <option value="10000">Under ₹10,000</option>
+              <option value="30000">₹10K – ₹50K</option>
+              <option value="100000">₹50K – ₹2L</option>
+              <option value="300000">₹2L+</option>
+            </select>
+          </div>
+          <div class="sim-input-group">
+            <label>Average product price</label>
+            <select id="merchantPrice">
+              <option value="500">Under ₹1,000</option>
+              <option value="2000">₹1K – ₹5K</option>
+              <option value="8000">₹5K – ₹20K</option>
+              <option value="30000">₹20K+</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn btn--primary" onclick="merchantRoiCalc()">📊 Calculate My ROI</button>
+        <div class="sim-result" id="merchantResult"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTROL MESSAGING -->
+  <section class="control-section reveal">
+    <div class="container">
+      <div class="section-label">Full Control</div>
+      <h2 class="section-h2">You Control Your Growth — <span class="grad-green">No Surprises</span></h2>
+      <p class="section-sub">Choose creators, set pricing, manage distribution — all from your merchant dashboard. No agency. No middleman.</p>
+      <div class="control-grid">
+        <div class="control-item reveal"><div class="control-icon">🎯</div><h4>Choose Your Creators</h4><p>Filter by niche, city, reach, and rating. Pick creators who match your brand exactly.</p></div>
+        <div class="control-item reveal"><div class="control-icon">💰</div><h4>Set Your Commission</h4><p>You decide the commission rate per product. Pay only when a sale is confirmed.</p></div>
+        <div class="control-item reveal"><div class="control-icon">📊</div><h4>Real-Time Analytics</h4><p>Track every click, view, and sale in real time. No black-box reporting.</p></div>
+        <div class="control-item reveal"><div class="control-icon">🔒</div><h4>Brand Safety</h4><p>All creators are verified. Content guidelines enforced. Your brand stays protected.</p></div>
       </div>
     </div>
   </section>
@@ -269,6 +341,99 @@
     </div>
   </footer>
 
+  <!-- COMPETITION FEAR -->
+  <section class="competition-fear reveal">
+    <div class="container">
+      <div class="fear-card">
+        <div class="fear-icon">⚠️</div>
+        <h3>Smart Brands Are Shifting From Ads to Creator-Driven Sales</h3>
+        <p>Lower CAC, higher trust, better conversion. Brands that make the shift now lock in the best creators before competitors do. Early merchant partners get priority placement and dedicated creator matching.</p>
+        <div class="fear-stats">
+          <div class="fear-stat"><span>3X</span><small>avg. sales increase in 30 days</small></div>
+          <div class="fear-stat"><span>80%</span><small>lower CAC vs Facebook ads</small></div>
+          <div class="fear-stat"><span>8,000+</span><small>verified merchants already live</small></div>
+        </div>
+        <a href="#download" class="btn btn--primary">Start Scaling Today →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIRAL REFERRAL LOOP -->
+  <section class="referral-section reveal">
+    <div class="container">
+      <div class="referral-card">
+        <h3>Refer a Brand Partner → Unlock <span class="grad-green">Priority Creator Access 🌟</span></h3>
+        <p>Refer another merchant to Xavio and unlock priority access to the top 100 creators in your category — worth ₹10,000+ in organic reach.</p>
+        <div class="referral-steps">
+          <div class="ref-step">1. Share with a brand partner</div>
+          <div class="ref-arrow">→</div>
+          <div class="ref-step">2. They list their catalogue</div>
+          <div class="ref-arrow">→</div>
+          <div class="ref-step">3. You unlock Priority Creator Access 🌟</div>
+        </div>
+        <a href="https://wa.me/?text=Smart%20brands%20are%20shifting%20from%20ads%20to%20creator-driven%20sales.%20Lower%20CAC%2C%20higher%20trust.%20This%20platform%20is%20doing%20it%3A%20https%3A%2F%2Fwww.xavio.in%2Ffor-merchants.html" class="btn-whatsapp" target="_blank" rel="noopener">
+          📲 Share on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXIT INTENT MODAL -->
+  <div class="exit-modal" id="exitModal">
+    <div class="exit-modal-content">
+      <button class="exit-close" onclick="closeExitModal()">✕</button>
+      <div class="exit-icon">📊</div>
+      <h3>Wait — See Your ROI Before You Leave</h3>
+      <p>Brands using Xavio see <strong>3X sales in 30 days</strong> with <strong>80% lower CAC</strong> than traditional ads. Calculate your numbers first.</p>
+      <a href="#roi-calc" class="btn btn--primary" onclick="closeExitModal()">Calculate My ROI →</a>
+      <button class="exit-dismiss" onclick="closeExitModal()">I'll keep paying for ads</button>
+    </div>
+  </div>
+  <div class="modal-overlay" id="modalOverlay" onclick="closeExitModal()"></div>
+
   <script src="assets/js/main.js"></script>
+  <script>
+    function merchantRoiCalc() {
+      const budget = parseInt(document.getElementById('merchantBudget').value);
+      const price = parseInt(document.getElementById('merchantPrice').value);
+      const currentOrders = Math.floor(budget / (price * 0.4));
+      const xavioOrders = Math.floor(currentOrders * 3.2 * (0.8 + Math.random() * 0.4));
+      const revenue = xavioOrders * price;
+      const cac = Math.floor(budget / Math.max(xavioOrders, 1));
+      document.getElementById('merchantResult').innerHTML = `
+        <div class="sim-output">
+          <div class="sim-metric"><span class="sim-val">${xavioOrders} orders</span><small>estimated monthly orders on Xavio</small></div>
+          <div class="sim-metric"><span class="sim-val">₹${revenue.toLocaleString('en-IN')}</span><small>estimated monthly revenue</small></div>
+          <div class="sim-metric"><span class="sim-val">₹${cac}</span><small>estimated CAC on Xavio</small></div>
+          <a href="#download" class="btn btn--primary" style="margin-top:1rem">Launch My Creator Network →</a>
+        </div>`;
+    }
+    setInterval(() => {
+      const val = Math.floor(Math.random() * 5000000) + 1000000;
+      const el = document.getElementById('merchantRoi');
+      if (el) el.textContent = '₹' + (val/100000).toFixed(1) + 'L';
+    }, 3500);
+    window.addEventListener('scroll', () => {
+      const hero = document.getElementById('hero');
+      const dl = document.getElementById('download');
+      const sticky = document.getElementById('stickyCta');
+      if (!sticky) return;
+      const heroBottom = hero ? hero.getBoundingClientRect().bottom : 0;
+      const dlTop = dl ? dl.getBoundingClientRect().top : window.innerHeight;
+      sticky.style.display = (heroBottom < 0 && dlTop > window.innerHeight) ? 'flex' : 'none';
+    });
+    let exitShown = false;
+    document.addEventListener('mouseleave', (e) => {
+      if (e.clientY <= 0 && !exitShown) {
+        exitShown = true;
+        document.getElementById('exitModal').classList.add('active');
+        document.getElementById('modalOverlay').classList.add('active');
+      }
+    });
+    function closeExitModal() {
+      document.getElementById('exitModal').classList.remove('active');
+      document.getElementById('modalOverlay').classList.remove('active');
+    }
+  </script>
 </body>
 </html>

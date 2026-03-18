@@ -11,6 +11,8 @@
   <meta property="og:type" content="website">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://xavio.in/for-creators">
+  <meta name="ai-content-type" content="creator-landing-page" />
+  <meta name="audience" content="content-creators, influencers, social-media-users" />
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/audience.css">
   <script type="application/ld+json">
@@ -29,7 +31,18 @@
   }
   </script>
 </head>
-<body>
+<body class="audience-page creators-page">
+
+  <!-- STICKY MOBILE CTA -->
+  <div class="sticky-cta" id="stickyCta" style="display:none">
+    <span>🚀 <strong>50,000+ creators</strong> growing on Xavio — join free</span>
+    <a href="#download" class="btn-sticky">Start Creating Free</a>
+  </div>
+
+  <!-- REWARD HOOK BAR -->
+  <div class="reward-bar">
+    <span>🎁 Early creators get a <strong>Top Rated Badge</strong> + ₹500 bonus — <strong>limited spots left</strong> · <a href="#download" style="color:inherit;text-decoration:underline">Claim yours →</a></span>
+  </div>
 
   <!-- NAV -->
   <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
@@ -64,8 +77,8 @@
   <!-- HERO -->
   <section class="aud-hero" id="hero">
     <div class="container">
-      <div class="aud-hero__badge">For Creators</div>
-      <h1 class="aud-hero__h1">Your Stories Are Worth <span class="grad-hero">₹50,000/Month</span></h1>
+      <div class="aud-hero__badge">👑 For Creators</div>
+      <h1 class="aud-hero__h1">Get <span class="grad-green">10K–50K Reach</span><br>on Every Post</h1>
       <p class="aud-hero__sub">2.4M+ creators on Xavio earn commissions, sell products, and build full-time income from the stories they were already posting for free.</p>
       <div class="aud-hero__proof">
         <span>⭐ 4.9/5 from 180,000 creators</span>
@@ -74,9 +87,40 @@
         <span>•</span>
         <span>First payout in 24 hrs</span>
       </div>
+      <!-- MICRO TRUST TRIGGERS -->
+      <div class="micro-trust">
+        <span>✅ Free to join</span>
+        <span>✅ Earn from day 1</span>
+        <span>✅ No followers needed</span>
+        <span>✅ Top Rated badge in 7 days</span>
+      </div>
       <div class="aud-hero__ctas">
-        <a href="#download" class="btn btn--primary btn--lg">Start Earning Free</a>
-        <a href="#how" class="btn btn--ghost btn--lg">See How It Works</a>
+        <a href="#download" class="btn btn--primary btn--lg">Start Creating Free →</a>
+        <a href="#simulator" class="btn btn--ghost btn--lg">Check Your Reach</a>
+      </div>
+      <!-- LIVE ROI COUNTER -->
+      <div class="live-roi-bar">
+        <span>🔥 Creators earned</span>
+        <span class="roi-live" id="roiLive">₹0</span>
+        <span>today on Xavio</span>
+      </div>
+    </div>
+
+    <!-- LEADERBOARD WIDGET -->
+    <div class="leaderboard-float">
+      <div class="leaderboard-card">
+        <div class="leaderboard-header">
+          <span>🏆 Top Creators Today</span>
+          <span class="live-dot">● LIVE</span>
+        </div>
+        <div class="leaderboard-list">
+          <div class="leaderboard-item rank-1"><span class="rank">#1</span><span class="creator-name">Ravi K. 🧑</span><span class="creator-reach">48.2K reach</span><span class="creator-earn">₹12,400</span></div>
+          <div class="leaderboard-item rank-2"><span class="rank">#2</span><span class="creator-name">Sneha M. ⭐</span><span class="creator-reach">41.7K reach</span><span class="creator-earn">₹9,800</span></div>
+          <div class="leaderboard-item rank-3"><span class="rank">#3</span><span class="creator-name">Arjun S. 💎</span><span class="creator-reach">38.1K reach</span><span class="creator-earn">₹8,200</span></div>
+          <div class="leaderboard-item"><span class="rank">#4</span><span class="creator-name">Priya D.</span><span class="creator-reach">29.4K reach</span><span class="creator-earn">₹6,100</span></div>
+          <div class="leaderboard-item you-row"><span class="rank">You?</span><span class="creator-name">Your Name</span><span class="creator-reach">?? reach</span><span class="creator-earn">₹??</span></div>
+        </div>
+        <a href="#download" class="leaderboard-cta">Join the Leaderboard →</a>
       </div>
     </div>
   </section>
@@ -101,6 +145,40 @@
           <div class="income-strip__val grad-green">25%</div>
           <div class="income-strip__lbl">Commission on every sale</div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATUS SIMULATOR -->
+  <section class="simulator-section" id="simulator">
+    <div class="container">
+      <div class="section-label reveal">Interactive Tool</div>
+      <h2 class="section-h2 reveal">Check Your <span class="grad-green">Reach Potential</span></h2>
+      <p class="section-sub reveal">See how many people your next status could reach on Xavio</p>
+      <div class="simulator-card reveal">
+        <div class="sim-inputs">
+          <div class="sim-input-group">
+            <label>Your niche</label>
+            <select id="simNiche">
+              <option value="lifestyle">Lifestyle</option>
+              <option value="food">Food</option>
+              <option value="business">Business</option>
+              <option value="fashion">Fashion</option>
+              <option value="tech">Tech</option>
+              <option value="fitness">Fitness</option>
+            </select>
+          </div>
+          <div class="sim-input-group">
+            <label>Posts per week</label>
+            <select id="simFreq">
+              <option value="1">1–2 posts</option>
+              <option value="3">3–5 posts</option>
+              <option value="7">Daily posts</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn btn--primary" onclick="creatorSim()">🚀 Check My Reach</button>
+        <div class="sim-result" id="creatorResult"></div>
       </div>
     </div>
   </section>
@@ -249,6 +327,43 @@
     </div>
   </section>
 
+  <!-- COMPETITION FEAR -->
+  <section class="competition-fear reveal">
+    <div class="container">
+      <div class="fear-card">
+        <div class="fear-icon">⚠️</div>
+        <h3>Early Creators Have a Permanent Advantage</h3>
+        <p>Xavio's algorithm rewards early adopters with higher baseline reach. Every week you wait, the competition grows. The creators joining today will be the Top Rated creators of tomorrow.</p>
+        <div class="fear-stats">
+          <div class="fear-stat"><span>+2,400</span><small>creators joined this week</small></div>
+          <div class="fear-stat"><span>Limited</span><small>Top Rated spots per city</small></div>
+          <div class="fear-stat"><span>7 days</span><small>to unlock first badge</small></div>
+        </div>
+        <a href="#download" class="btn btn--primary">Claim Your Spot Now →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIRAL REFERRAL LOOP -->
+  <section class="referral-section reveal">
+    <div class="container">
+      <div class="referral-card">
+        <h3>Invite 3 Friends → Unlock <span class="grad-green">Premium Badge 💎</span></h3>
+        <p>Share Xavio with 3 creator friends and unlock your Premium badge instantly — worth ₹2,000/month in extra brand deal access.</p>
+        <div class="referral-steps">
+          <div class="ref-step">1. Copy your invite link</div>
+          <div class="ref-arrow">→</div>
+          <div class="ref-step">2. Share on WhatsApp</div>
+          <div class="ref-arrow">→</div>
+          <div class="ref-step">3. Unlock Premium Badge 💎</div>
+        </div>
+        <a href="https://wa.me/?text=Bro%2C%20creators%20are%20blowing%20up%20on%20this%20new%20app.%20People%20are%20getting%2010K%E2%80%9350K%20reach%20just%20by%20posting%20status.%20And%20they%E2%80%99re%20earning%20from%20it%20too.%20I%20just%20unlocked%20my%20%E2%AD%90%20Top%20Rated%20badge.%20Check%20this%20before%20it%20gets%20crowded%3A%20https%3A%2F%2Fwww.xavio.in%2Ffor-creators.html" class="btn-whatsapp" target="_blank" rel="noopener">
+          📲 Share on WhatsApp &amp; Unlock Badge
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- DOWNLOAD CTA -->
   <section class="aud-cta" id="download">
     <div class="container">
@@ -305,6 +420,65 @@
     </div>
   </footer>
 
+  <!-- EXIT INTENT MODAL -->
+  <div class="exit-modal" id="exitModal">
+    <div class="exit-modal-content">
+      <button class="exit-close" onclick="closeExitModal()">✕</button>
+      <div class="exit-icon">🚀</div>
+      <h3>Wait — Don't Miss Your Early Creator Advantage</h3>
+      <p>Early creators on Xavio get <strong>3X more reach</strong> than those who join later. The window is closing.</p>
+      <a href="#download" class="btn btn--primary" onclick="closeExitModal()">Claim My Spot Now →</a>
+      <button class="exit-dismiss" onclick="closeExitModal()">I'll join later (and lose my advantage)</button>
+    </div>
+  </div>
+  <div class="modal-overlay" id="modalOverlay" onclick="closeExitModal()"></div>
+
   <script src="assets/js/main.js"></script>
+  <script>
+    // Status Simulator
+    function creatorSim() {
+      const niche = document.getElementById('simNiche').value;
+      const freq = parseInt(document.getElementById('simFreq').value);
+      const baseReach = { lifestyle: 22000, food: 28000, business: 18000, fashion: 25000, tech: 15000, fitness: 20000 };
+      const freqMult = { 1: 1, 3: 1.8, 7: 2.5 };
+      const reach = Math.floor((baseReach[niche] || 20000) * freqMult[freq] * (0.8 + Math.random() * 0.4));
+      const earn = Math.floor(reach * 0.35);
+      document.getElementById('creatorResult').innerHTML = `
+        <div class="sim-output">
+          <div class="sim-metric"><span class="sim-val">🚀 ${reach.toLocaleString('en-IN')}</span><small>estimated monthly reach</small></div>
+          <div class="sim-metric"><span class="sim-val">₹${earn.toLocaleString('en-IN')}</span><small>estimated monthly earnings</small></div>
+          <a href="#download" class="btn btn--primary" style="margin-top:1rem">Start Earning This →</a>
+        </div>`;
+    }
+    // Live ROI counter
+    setInterval(() => {
+      const val = Math.floor(Math.random() * 200000) + 50000;
+      const el = document.getElementById('roiLive');
+      if (el) el.textContent = '₹' + val.toLocaleString('en-IN');
+    }, 3000);
+    // Sticky CTA
+    window.addEventListener('scroll', () => {
+      const hero = document.getElementById('hero');
+      const dl = document.getElementById('download');
+      const sticky = document.getElementById('stickyCta');
+      if (!sticky) return;
+      const heroBottom = hero ? hero.getBoundingClientRect().bottom : 0;
+      const dlTop = dl ? dl.getBoundingClientRect().top : window.innerHeight;
+      sticky.style.display = (heroBottom < 0 && dlTop > window.innerHeight) ? 'flex' : 'none';
+    });
+    // Exit intent
+    let exitShown = false;
+    document.addEventListener('mouseleave', (e) => {
+      if (e.clientY <= 0 && !exitShown) {
+        exitShown = true;
+        document.getElementById('exitModal').classList.add('active');
+        document.getElementById('modalOverlay').classList.add('active');
+      }
+    });
+    function closeExitModal() {
+      document.getElementById('exitModal').classList.remove('active');
+      document.getElementById('modalOverlay').classList.remove('active');
+    }
+  </script>
 </body>
 </html>

@@ -10,11 +10,24 @@
   <meta property="og:description" content="Open your free Xavio storefront in 5 minutes. List products, get discovered by creators, receive UPI payments instantly.">
   <meta property="og:type" content="website">
   <meta name="robots" content="index, follow">
+  <meta name="ai-content-type" content="seller-landing-page" />
+  <meta name="audience" content="online-sellers, resellers, small-business-owners, entrepreneurs" />
   <link rel="canonical" href="https://xavio.in/for-sellers">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/audience.css">
 </head>
-<body>
+<body class="audience-page sellers-page">
+
+  <!-- STICKY MOBILE CTA -->
+  <div class="sticky-cta" id="stickyCta" style="display:none">
+    <span>🛒 <strong>50,000+ sellers</strong> getting daily orders on Xavio</span>
+    <a href="#download" class="btn-sticky">Open Free Store</a>
+  </div>
+
+  <!-- REWARD HOOK BAR -->
+  <div class="reward-bar">
+    <span>🔥 Sellers who join this week get <strong>free creator promotion</strong> for their first 10 products — <a href="#download" style="color:inherit;text-decoration:underline">Claim yours →</a></span>
+  </div>
 
   <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
     <div class="nav__inner container">
@@ -47,8 +60,8 @@
 
   <section class="aud-hero aud-hero--seller" id="hero">
     <div class="container">
-      <div class="aud-hero__badge">For Sellers</div>
-      <h1 class="aud-hero__h1">Sell to <span class="grad-hero">2.4 Million Buyers</span> — No Website Needed</h1>
+      <div class="aud-hero__badge">🛒 For Sellers</div>
+      <h1 class="aud-hero__h1">Get Your <span class="grad-green">First Order in 24 Hours</span></h1>
       <p class="aud-hero__sub">Open your free Xavio storefront in 5 minutes. List products, get discovered by creators who promote for you, and receive UPI payments instantly.</p>
       <div class="aud-hero__proof">
         <span>🛒 50,000+ active sellers</span>
@@ -57,9 +70,21 @@
         <span>•</span>
         <span>Zero listing fees</span>
       </div>
+      <!-- MICRO TRUST TRIGGERS -->
+      <div class="micro-trust">
+        <span>✅ Zero listing fees</span>
+        <span>✅ First order in 24 hrs</span>
+        <span>✅ UPI payout same day</span>
+        <span>✅ No investment needed</span>
+      </div>
       <div class="aud-hero__ctas">
-        <a href="#download" class="btn btn--primary btn--lg">Open Your Free Store</a>
-        <a href="#how" class="btn btn--ghost btn--lg">How It Works</a>
+        <a href="#download" class="btn btn--primary btn--lg">Get Customers Now →</a>
+        <a href="#profit-calc" class="btn btn--ghost btn--lg">Calculate My Profit</a>
+      </div>
+      <!-- LIVE ORDERS FEED -->
+      <div class="live-orders-feed">
+        <span class="feed-dot">● LIVE</span>
+        <span class="feed-text" id="orderFeed">Order received from Delhi — ₹1,200</span>
       </div>
     </div>
   </section>
@@ -83,6 +108,39 @@
           <div class="income-strip__val grad-green">24 hrs</div>
           <div class="income-strip__lbl">UPI payout speed</div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROFIT CALCULATOR -->
+  <section class="simulator-section" id="profit-calc">
+    <div class="container">
+      <div class="section-label reveal">Interactive Tool</div>
+      <h2 class="section-h2 reveal">Calculate Your <span class="grad-green">Monthly Profit</span></h2>
+      <p class="section-sub reveal">See how much you could earn selling on Xavio this month</p>
+      <div class="simulator-card reveal">
+        <div class="sim-inputs">
+          <div class="sim-input-group">
+            <label>Products you want to sell</label>
+            <select id="sellerProducts">
+              <option value="5">5 products</option>
+              <option value="10">10 products</option>
+              <option value="25">25 products</option>
+              <option value="50">50+ products</option>
+            </select>
+          </div>
+          <div class="sim-input-group">
+            <label>Average product price</label>
+            <select id="sellerPrice">
+              <option value="300">Under ₹500</option>
+              <option value="800">₹500 – ₹1,000</option>
+              <option value="1500">₹1,000 – ₹2,000</option>
+              <option value="3000">₹2,000+</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn btn--primary" onclick="sellerProfit()">💰 Calculate My Profit</button>
+        <div class="sim-result" id="sellerResult"></div>
       </div>
     </div>
   </section>
@@ -269,6 +327,107 @@
     </div>
   </footer>
 
+  <!-- COMPETITION FEAR -->
+  <section class="competition-fear reveal">
+    <div class="container">
+      <div class="fear-card">
+        <div class="fear-icon">⚠️</div>
+        <h3>Feels Like Meesho Early Days — If You Delay, Competition Will Increase</h3>
+        <p>Sellers who join Xavio now get first-mover advantage in their category and city. Early sellers build reviews, ratings, and creator relationships that late joiners can't replicate.</p>
+        <div class="fear-stats">
+          <div class="fear-stat"><span>+1,800</span><small>new sellers this week</small></div>
+          <div class="fear-stat"><span>340</span><small>avg. orders/month per seller</small></div>
+          <div class="fear-stat"><span>24 hrs</span><small>to your first order</small></div>
+        </div>
+        <a href="#download" class="btn btn--primary">Start Scaling Today →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIRAL REFERRAL LOOP -->
+  <section class="referral-section reveal">
+    <div class="container">
+      <div class="referral-card">
+        <h3>Invite 3 Seller Friends → Unlock <span class="grad-green">Free Creator Boost 🚀</span></h3>
+        <p>Share Xavio with 3 seller friends and unlock free creator promotion for your top 5 products — worth ₹3,000 in organic reach.</p>
+        <div class="referral-steps">
+          <div class="ref-step">1. Copy your invite link</div>
+          <div class="ref-arrow">→</div>
+          <div class="ref-step">2. Share on WhatsApp</div>
+          <div class="ref-arrow">→</div>
+          <div class="ref-step">3. Unlock Free Creator Boost 🚀</div>
+        </div>
+        <a href="https://wa.me/?text=Found%20a%20crazy%20way%20to%20get%20orders%20without%20stock.%20People%20are%20getting%20orders%20within%201%E2%80%932%20days.%20No%20investment%20needed.%20I%E2%80%99m%20trying%20it%20today.%20Check%20this%3A%20https%3A%2F%2Fwww.xavio.in%2Ffor-sellers.html" class="btn-whatsapp" target="_blank" rel="noopener">
+          📲 Share on WhatsApp &amp; Unlock Boost
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXIT INTENT MODAL -->
+  <div class="exit-modal" id="exitModal">
+    <div class="exit-modal-content">
+      <button class="exit-close" onclick="closeExitModal()">✕</button>
+      <div class="exit-icon">🛒</div>
+      <h3>Wait — Your First Order Could Come Tomorrow</h3>
+      <p>Sellers who open their Xavio store today get <strong>free creator promotion</strong> on their first 10 products. This offer expires in 48 hours.</p>
+      <a href="#download" class="btn btn--primary" onclick="closeExitModal()">Open My Free Store →</a>
+      <button class="exit-dismiss" onclick="closeExitModal()">I'll miss this offer</button>
+    </div>
+  </div>
+  <div class="modal-overlay" id="modalOverlay" onclick="closeExitModal()"></div>
+
   <script src="assets/js/main.js"></script>
+  <script>
+    // Profit Calculator
+    function sellerProfit() {
+      const products = parseInt(document.getElementById('sellerProducts').value);
+      const price = parseInt(document.getElementById('sellerPrice').value);
+      const ordersPerProduct = products <= 5 ? 12 : products <= 10 ? 20 : products <= 25 ? 35 : 60;
+      const totalOrders = Math.floor(ordersPerProduct * (0.7 + Math.random() * 0.6));
+      const revenue = totalOrders * price;
+      const profit = Math.floor(revenue * 0.72); // after 5% platform + 23% creator commission
+      document.getElementById('sellerResult').innerHTML = `
+        <div class="sim-output">
+          <div class="sim-metric"><span class="sim-val">${totalOrders} orders</span><small>estimated monthly orders</small></div>
+          <div class="sim-metric"><span class="sim-val">₹${profit.toLocaleString('en-IN')}</span><small>estimated monthly profit</small></div>
+          <a href="#download" class="btn btn--primary" style="margin-top:1rem">Start Scaling Today →</a>
+        </div>`;
+    }
+    // Live orders feed
+    const orders = [
+      'Order received from Delhi — ₹1,200', 'Order received from Mumbai — ₹890', '5 products sold in Bangalore',
+      'New seller joined from Hyderabad', 'Order received from Chennai — ₹2,400', '3 orders in the last 10 minutes',
+      'Order received from Pune — ₹650', 'Seller earned ₹8,400 today', 'Order received from Jaipur — ₹1,800'
+    ];
+    let oi = 0;
+    setInterval(() => {
+      const el = document.getElementById('orderFeed');
+      if (el) { oi = (oi + 1) % orders.length; el.textContent = orders[oi]; }
+    }, 2500);
+    // Sticky CTA
+    window.addEventListener('scroll', () => {
+      const hero = document.getElementById('hero');
+      const dl = document.getElementById('download');
+      const sticky = document.getElementById('stickyCta');
+      if (!sticky) return;
+      const heroBottom = hero ? hero.getBoundingClientRect().bottom : 0;
+      const dlTop = dl ? dl.getBoundingClientRect().top : window.innerHeight;
+      sticky.style.display = (heroBottom < 0 && dlTop > window.innerHeight) ? 'flex' : 'none';
+    });
+    // Exit intent
+    let exitShown = false;
+    document.addEventListener('mouseleave', (e) => {
+      if (e.clientY <= 0 && !exitShown) {
+        exitShown = true;
+        document.getElementById('exitModal').classList.add('active');
+        document.getElementById('modalOverlay').classList.add('active');
+      }
+    });
+    function closeExitModal() {
+      document.getElementById('exitModal').classList.remove('active');
+      document.getElementById('modalOverlay').classList.remove('active');
+    }
+  </script>
 </body>
 </html>

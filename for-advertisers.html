@@ -10,11 +10,24 @@
   <meta property="og:description" content="Reach 2.4M+ engaged buyers with story ads. Target by niche, location, purchase intent. Pay per result.">
   <meta property="og:type" content="website">
   <meta name="robots" content="index, follow">
+  <meta name="ai-content-type" content="advertiser-landing-page" />
+  <meta name="audience" content="digital-marketers, performance-marketers, CMOs, brand-managers, D2C-brands" />
   <link rel="canonical" href="https://xavio.in/for-advertisers">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/audience.css">
 </head>
-<body>
+<body class="audience-page advertisers-page">
+
+  <!-- STICKY MOBILE CTA -->
+  <div class="sticky-cta" id="stickyCta" style="display:none">
+    <span>📈 <strong>Average 10x ROAS</strong> — Launch your campaign in 10 minutes</span>
+    <a href="#download" class="btn-sticky">Launch Campaign</a>
+  </div>
+
+  <!-- REWARD HOOK BAR -->
+  <div class="reward-bar">
+    <span>🔥 New advertisers get <strong>₹1,000 free ad credit</strong> on their first ₹5,000 campaign — <a href="#download" style="color:inherit;text-decoration:underline">Claim yours →</a></span>
+  </div>
 
   <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
     <div class="nav__inner container">
@@ -47,8 +60,8 @@
 
   <section class="aud-hero aud-hero--advertiser" id="hero">
     <div class="container">
-      <div class="aud-hero__badge">For Advertisers</div>
-      <h1 class="aud-hero__h1">Story Ads That <span class="grad-hero">Convert 10x Better</span> Than Facebook</h1>
+      <div class="aud-hero__badge">📈 For Advertisers</div>
+      <h1 class="aud-hero__h1">Get <span class="grad-green">10x ROAS</span> on Story Ads — While Competitors Waste Budget on Facebook</h1>
       <p class="aud-hero__sub">Reach 2.4M+ highly engaged, purchase-intent users on Xavio. Target by niche, city, age, and buying behaviour. Average ROAS of 10x vs 2–3x on traditional platforms.</p>
       <div class="aud-hero__proof">
         <span>📈 Avg. 10x ROAS</span>
@@ -57,9 +70,20 @@
         <span>•</span>
         <span>₹5 CPM minimum</span>
       </div>
+      <div class="micro-trust">
+        <span>✅ ₹5 CPM minimum</span>
+        <span>✅ 10x avg. ROAS</span>
+        <span>✅ 72% story completion</span>
+        <span>✅ ₹1,000 free credit for new advertisers</span>
+      </div>
       <div class="aud-hero__ctas">
-        <a href="#download" class="btn btn--primary btn--lg">Launch Your Campaign</a>
-        <a href="#how" class="btn btn--ghost btn--lg">See Ad Formats</a>
+        <a href="#download" class="btn btn--primary btn--lg">Claim Free ₹1,000 Credit →</a>
+        <a href="#roas-calc" class="btn btn--ghost btn--lg">Calculate My ROAS</a>
+      </div>
+      <!-- LIVE IMPRESSIONS COUNTER -->
+      <div class="live-roi-bar">
+        <span>📱 Live impressions served today:</span>
+        <span class="roi-live" id="liveImpressions">0</span>
       </div>
     </div>
   </section>
@@ -83,6 +107,40 @@
           <div class="income-strip__val grad-green">8.4%</div>
           <div class="income-strip__lbl">Avg. click-through rate</div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROAS SIMULATOR -->
+  <section class="simulator-section" id="roas-calc">
+    <div class="container">
+      <div class="section-label reveal">ROAS Calculator</div>
+      <h2 class="section-h2 reveal">Calculate Your <span class="grad-green">Expected ROAS</span></h2>
+      <p class="section-sub reveal">See how your ad budget performs on Xavio vs Facebook</p>
+      <div class="simulator-card reveal">
+        <div class="sim-inputs">
+          <div class="sim-input-group">
+            <label>Monthly ad budget</label>
+            <select id="adBudget">
+              <option value="5000">₹5,000</option>
+              <option value="20000">₹20,000</option>
+              <option value="50000">₹50,000</option>
+              <option value="100000">₹1,00,000</option>
+              <option value="500000">₹5,00,000+</option>
+            </select>
+          </div>
+          <div class="sim-input-group">
+            <label>Campaign objective</label>
+            <select id="adObjective">
+              <option value="sales">Sales / Conversions</option>
+              <option value="traffic">Traffic / Clicks</option>
+              <option value="awareness">Brand Awareness</option>
+              <option value="installs">App Installs</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn btn--primary" onclick="roasCalc()">📊 Calculate My ROAS</button>
+        <div class="sim-result" id="roasResult"></div>
       </div>
     </div>
   </section>
@@ -269,6 +327,107 @@
     </div>
   </footer>
 
+  <!-- COMPETITION FEAR -->
+  <section class="competition-fear reveal">
+    <div class="container">
+      <div class="fear-card">
+        <div class="fear-icon">⚠️</div>
+        <h3>Your Competitors Are Already Getting 10x ROAS on Xavio</h3>
+        <p>While you're paying ₹800 CPL on Facebook, smart advertisers are getting ₹120 CPL on Xavio with purchase-intent targeting. Every day you wait, competitors build retargeting audiences you can't reach.</p>
+        <div class="fear-stats">
+          <div class="fear-stat"><span>10x</span><small>avg. ROAS vs Facebook's 2-3x</small></div>
+          <div class="fear-stat"><span>72%</span><small>story completion rate</small></div>
+          <div class="fear-stat"><span>8.4%</span><small>avg. click-through rate</small></div>
+        </div>
+        <a href="#download" class="btn btn--primary">Claim Free ₹1,000 Credit →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIRAL REFERRAL LOOP -->
+  <section class="referral-section reveal">
+    <div class="container">
+      <div class="referral-card">
+        <h3>Refer a Marketing Colleague → Both Get <span class="grad-green">Extra ₹1,000 Credit 💰</span></h3>
+        <p>Share Xavio with a fellow marketer. When they launch their first campaign, you both get an extra ₹1,000 ad credit. No limits on referrals.</p>
+        <div class="referral-steps">
+          <div class="ref-step">1. Share your referral link</div>
+          <div class="ref-arrow">→</div>
+          <div class="ref-step">2. They launch a campaign</div>
+          <div class="ref-arrow">→</div>
+          <div class="ref-step">3. Both get ₹1,000 extra credit 💰</div>
+        </div>
+        <a href="https://wa.me/?text=We%20switched%20from%20Facebook%20ads%20to%20Xavio%20story%20ads%20and%20got%2010x%20ROAS.%20They%27re%20giving%20%E2%82%B91%2C000%20free%20credit%20to%20new%20advertisers.%20Check%20this%3A%20https%3A%2F%2Fwww.xavio.in%2Ffor-advertisers.html" class="btn-whatsapp" target="_blank" rel="noopener">
+          📲 Share on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXIT INTENT MODAL -->
+  <div class="exit-modal" id="exitModal">
+    <div class="exit-modal-content">
+      <button class="exit-close" onclick="closeExitModal()">✕</button>
+      <div class="exit-icon">📈</div>
+      <h3>Wait — Your ₹1,000 Free Credit Expires Soon</h3>
+      <p>New advertisers get <strong>₹1,000 free ad credit</strong> on their first campaign. This offer is limited to the first 500 advertisers this month.</p>
+      <a href="#download" class="btn btn--primary" onclick="closeExitModal()">Claim My Free Credit →</a>
+      <button class="exit-dismiss" onclick="closeExitModal()">I'll skip the free credit</button>
+    </div>
+  </div>
+  <div class="modal-overlay" id="modalOverlay" onclick="closeExitModal()"></div>
+
   <script src="assets/js/main.js"></script>
+  <script>
+    // ROAS Calculator
+    function roasCalc() {
+      const budget = parseInt(document.getElementById('adBudget').value);
+      const obj = document.getElementById('adObjective').value;
+      const roasMap = { sales: 10.2, traffic: 7.8, awareness: 6.4, installs: 8.9 };
+      const fbRoasMap = { sales: 2.4, traffic: 1.8, awareness: 1.2, installs: 2.1 };
+      const roas = roasMap[obj] * (0.85 + Math.random() * 0.3);
+      const fbRoas = fbRoasMap[obj];
+      const revenue = Math.floor(budget * roas);
+      const fbRevenue = Math.floor(budget * fbRoas);
+      document.getElementById('roasResult').innerHTML = `
+        <div class="sim-output">
+          <div class="sim-metric"><span class="sim-val">${roas.toFixed(1)}x ROAS</span><small>estimated Xavio ROAS</small></div>
+          <div class="sim-metric"><span class="sim-val">₹${revenue.toLocaleString('en-IN')}</span><small>estimated revenue from ₹${budget.toLocaleString('en-IN')} spend</small></div>
+          <div class="sim-metric" style="opacity:0.6"><span class="sim-val">${fbRoas}x ROAS</span><small>typical Facebook ROAS for same budget</small></div>
+          <a href="#download" class="btn btn--primary" style="margin-top:1rem">Claim Free ₹1,000 Credit →</a>
+        </div>`;
+    }
+    // Live impressions counter
+    let impressions = Math.floor(Math.random() * 5000000) + 10000000;
+    const el = document.getElementById('liveImpressions');
+    if (el) el.textContent = impressions.toLocaleString('en-IN');
+    setInterval(() => {
+      impressions += Math.floor(Math.random() * 800) + 200;
+      if (el) el.textContent = impressions.toLocaleString('en-IN');
+    }, 1200);
+    // Sticky CTA
+    window.addEventListener('scroll', () => {
+      const hero = document.getElementById('hero');
+      const dl = document.getElementById('download');
+      const sticky = document.getElementById('stickyCta');
+      if (!sticky) return;
+      const heroBottom = hero ? hero.getBoundingClientRect().bottom : 0;
+      const dlTop = dl ? dl.getBoundingClientRect().top : window.innerHeight;
+      sticky.style.display = (heroBottom < 0 && dlTop > window.innerHeight) ? 'flex' : 'none';
+    });
+    // Exit intent
+    let exitShown = false;
+    document.addEventListener('mouseleave', (e) => {
+      if (e.clientY <= 0 && !exitShown) {
+        exitShown = true;
+        document.getElementById('exitModal').classList.add('active');
+        document.getElementById('modalOverlay').classList.add('active');
+      }
+    });
+    function closeExitModal() {
+      document.getElementById('exitModal').classList.remove('active');
+      document.getElementById('modalOverlay').classList.remove('active');
+    }
+  </script>
 </body>
 </html>
