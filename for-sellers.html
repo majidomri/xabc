@@ -1,433 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Xavio for Sellers — Open Your Free Online Store in 5 Minutes</title>
-  <meta name="description" content="List your products on Xavio and reach 2.4M+ active buyers. Get paid instantly via UPI. No website, no tech skills, no upfront cost needed.">
-  <meta name="keywords" content="sell online India free, open online store India, social commerce seller, UPI payment seller app, Xavio seller">
-  <meta property="og:title" content="Xavio for Sellers — Sell to 2.4M+ Buyers. Get Paid Instantly.">
-  <meta property="og:description" content="Open your free Xavio storefront in 5 minutes. List products, get discovered by creators, receive UPI payments instantly.">
-  <meta property="og:type" content="website">
-  <meta name="robots" content="index, follow">
-  <meta name="ai-content-type" content="seller-landing-page" />
-  <meta name="audience" content="online-sellers, resellers, small-business-owners, entrepreneurs" />
-  <link rel="canonical" href="https://xavio.in/for-sellers">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/audience.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xavio for Sellers — Get Your First Order in 24 Hours</title>
+  <meta name="description" content="Sell products through creator stories. Reach millions of engaged buyers. No ads needed. Join 10,000+ sellers growing with Xavio." />
+  <meta property="og:title" content="Xavio for Sellers — Get Your First Order in 24 Hours" />
+  <meta property="og:description" content="Sell products through creator stories. Reach millions of engaged buyers. No ads needed. Join 10,000+ sellers growing with Xavio." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://xavio.in/for-sellers.html" />
+  <link rel="stylesheet" href="assets/css/xavio.css" />
 </head>
-<body class="audience-page sellers-page">
-
-  <!-- STICKY MOBILE CTA -->
-  <div class="sticky-cta" id="stickyCta" style="display:none">
-    <span>🛒 <strong>50,000+ sellers</strong> getting daily orders on Xavio</span>
-    <a href="#download" class="btn-sticky">Open Free Store</a>
+<body>
+<nav class="xnav" id="xnav">
+  <div class="flex items-center gap-2">
+    <span class="logo-icon">X</span>
+    <span class="text-xl font-black text-white tracking-tight" style="-webkit-text-fill-color:white">avio</span>
   </div>
-
-  <!-- REWARD HOOK BAR -->
-  <div class="reward-bar">
-    <span>🔥 Sellers who join this week get <strong>free creator promotion</strong> for their first 10 products — <a href="#download" style="color:inherit;text-decoration:underline">Claim yours →</a></span>
+  <div class="xnav__links"><a href="#features" class="text-sm text-gray-400 hover:text-white transition-colors duration-200">Features</a>
+<a href="for-creators.html" class="text-sm text-gray-400 hover:text-white transition-colors duration-200">Creators</a>
+<a href="for-sellers.html" class="text-sm text-brand font-semibold transition-colors duration-200">Sellers</a>
+<a href="for-merchants.html" class="text-sm text-gray-400 hover:text-white transition-colors duration-200">Merchants</a>
+<a href="for-advertisers.html" class="text-sm text-gray-400 hover:text-white transition-colors duration-200">Advertisers</a>
+<a href="#pricing" class="text-sm text-gray-400 hover:text-white transition-colors duration-200">Pricing</a></div>
+  <div class="xnav__actions">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☀</button>
+    <a href="#download" class="btn-ghost hidden md:inline-flex">Log in</a>
+    <a href="#download" class="btn-primary hidden md:inline-flex">Get Started Free</a>
+    <button class="theme-toggle md:hidden" id="navBurger" aria-label="Menu">☰</button>
   </div>
+  <div class="xnav__mobile" id="navMobile">
+        <a href="#features">Features</a>
+    <a href="for-creators.html">Creators</a>
+    <a href="for-sellers.html">Sellers</a>
+    <a href="for-merchants.html">Merchants</a>
+    <a href="for-advertisers.html">Advertisers</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#download" class="btn-primary text-center mt-2">Get Started Free</a>
+  </div>
+</nav>
+<div class="reward-bar">🛍️ Seller Offer: List your first 10 products FREE and get matched with 3 creators instantly — <a href="#download" class="underline font-bold">Start Now →</a></div>
+<div class="live-feed-bar" id="liveFeed">🔴 Live: Vikram from Surat just got 15 orders in the last hour</div>
 
-  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
-    <div class="nav__inner container">
-      <a href="index.html" class="nav__logo" aria-label="Xavio Home">
-        <span class="nav__logo-mark">X</span><span class="nav__logo-text">avio</span>
-      </a>
-      <ul class="nav__links" role="list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="for-creators.html">Creators</a></li>
-        <li><a href="for-sellers.html" aria-current="page">Sellers</a></li>
-        <li><a href="for-merchants.html">Merchants</a></li>
-        <li><a href="for-advertisers.html">Advertisers</a></li>
-      </ul>
-      <div class="nav__actions">
-        <a href="#download" class="btn btn--primary btn--sm">Open Free Store</a>
-      </div>
-      <button class="nav__burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+<section class="section pt-32 pb-20 text-center relative overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none" style="background:radial-gradient(ellipse 80% 50% at 50% -10%,rgba(0,200,150,.12),transparent)"></div>
+  <div class="max-w-4xl mx-auto relative">
+    <div class="hero-badge reveal">🛍️ For Product Sellers</div>
+    <h1 class="hero-title reveal">Sell Through Stories.<br><span class="grad-text">First Order in 24 Hours.</span></h1>
+    <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-8 reveal">Stop paying for ads that don't convert. Let trusted creators sell your products to their engaged audiences. You only pay when you make a sale.</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center mb-10 reveal">
+      <a href="#download" class="btn-primary text-base px-8 py-4">List Your Products Free &rarr;</a>
+      <a href="#features" class="btn-ghost text-base px-8 py-4">See How It Works</a>
     </div>
-    <div class="nav__mobile" id="navMobile" aria-hidden="true">
-      <a href="index.html">Home</a>
-      <a href="for-creators.html">Creators</a>
-      <a href="for-sellers.html">Sellers</a>
-      <a href="for-merchants.html">Merchants</a>
-      <a href="for-advertisers.html">Advertisers</a>
-      <a href="#download" class="btn btn--primary">Open Free Store</a>
+    <div class="flex flex-wrap justify-center gap-6 text-sm text-gray-500 mb-12 reveal">
+      <span>✓ No credit card required</span><span>✓ Free forever plan</span><span>✓ Setup in 2 minutes</span><span>✓ UPI instant payouts</span>
     </div>
-  </nav>
-
-  <section class="aud-hero aud-hero--seller" id="hero">
-    <div class="container">
-      <div class="aud-hero__badge">🛒 For Sellers</div>
-      <h1 class="aud-hero__h1">Get Your <span class="grad-green">First Order in 24 Hours</span></h1>
-      <p class="aud-hero__sub">Open your free Xavio storefront in 5 minutes. List products, get discovered by creators who promote for you, and receive UPI payments instantly.</p>
-      <div class="aud-hero__proof">
-        <span>🛒 50,000+ active sellers</span>
-        <span>•</span>
-        <span>Avg. 340 orders/month per seller</span>
-        <span>•</span>
-        <span>Zero listing fees</span>
-      </div>
-      <!-- MICRO TRUST TRIGGERS -->
-      <div class="micro-trust">
-        <span>✅ Zero listing fees</span>
-        <span>✅ First order in 24 hrs</span>
-        <span>✅ UPI payout same day</span>
-        <span>✅ No investment needed</span>
-      </div>
-      <div class="aud-hero__ctas">
-        <a href="#download" class="btn btn--primary btn--lg">Get Customers Now →</a>
-        <a href="#profit-calc" class="btn btn--ghost btn--lg">Calculate My Profit</a>
-      </div>
-      <!-- LIVE ORDERS FEED -->
-      <div class="live-orders-feed">
-        <span class="feed-dot">● LIVE</span>
-        <span class="feed-text" id="orderFeed">Order received from Delhi — ₹1,200</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="income-strip">
-    <div class="container">
-      <div class="income-strip__grid">
-        <div class="income-strip__item reveal">
-          <div class="income-strip__val grad-green">₹0</div>
-          <div class="income-strip__lbl">Cost to open your store</div>
-        </div>
-        <div class="income-strip__item reveal">
-          <div class="income-strip__val grad-green">5 min</div>
-          <div class="income-strip__lbl">Time to go live</div>
-        </div>
-        <div class="income-strip__item reveal">
-          <div class="income-strip__val grad-green">2.4M+</div>
-          <div class="income-strip__lbl">Potential buyers on day 1</div>
-        </div>
-        <div class="income-strip__item reveal">
-          <div class="income-strip__val grad-green">24 hrs</div>
-          <div class="income-strip__lbl">UPI payout speed</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROFIT CALCULATOR -->
-  <section class="simulator-section" id="profit-calc">
-    <div class="container">
-      <div class="section-label reveal">Interactive Tool</div>
-      <h2 class="section-h2 reveal">Calculate Your <span class="grad-green">Monthly Profit</span></h2>
-      <p class="section-sub reveal">See how much you could earn selling on Xavio this month</p>
-      <div class="simulator-card reveal">
-        <div class="sim-inputs">
-          <div class="sim-input-group">
-            <label>Products you want to sell</label>
-            <select id="sellerProducts">
-              <option value="5">5 products</option>
-              <option value="10">10 products</option>
-              <option value="25">25 products</option>
-              <option value="50">50+ products</option>
-            </select>
-          </div>
-          <div class="sim-input-group">
-            <label>Average product price</label>
-            <select id="sellerPrice">
-              <option value="300">Under ₹500</option>
-              <option value="800">₹500 – ₹1,000</option>
-              <option value="1500">₹1,000 – ₹2,000</option>
-              <option value="3000">₹2,000+</option>
-            </select>
-          </div>
-        </div>
-        <button class="btn btn--primary" onclick="sellerProfit()">💰 Calculate My Profit</button>
-        <div class="sim-result" id="sellerResult"></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="how" id="how">
-    <div class="container">
-      <div class="section-label reveal">How It Works</div>
-      <h2 class="section-h2 reveal">From Zero to <span class="grad-green">First Sale in 24 Hours</span></h2>
-      <div class="steps">
-        <div class="step reveal">
-          <div class="step__num">01</div>
-          <h3 class="step__title">List Your Products</h3>
-          <p class="step__desc">Add photos, price, and description. Xavio's AI auto-generates SEO-optimized product titles. Your catalogue is live instantly.</p>
-        </div>
-        <div class="step reveal">
-          <div class="step__num">02</div>
-          <h3 class="step__title">Creators Promote You</h3>
-          <p class="step__desc">2.4M+ creators browse your catalogue and tag your products in their stories. You pay commission only when a sale happens — zero upfront ad spend.</p>
-        </div>
-        <div class="step reveal">
-          <div class="step__num">03</div>
-          <h3 class="step__title">Get Paid Instantly</h3>
-          <p class="step__desc">Buyer pays via UPI. Xavio deducts the creator commission and transfers your earnings to your bank within 24 hours.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="aud-features">
-    <div class="container">
-      <div class="section-label reveal">Seller Tools</div>
-      <h2 class="section-h2 reveal">Everything to <span class="grad-warm">Grow Your Sales</span></h2>
-      <div class="feat-grid">
-        <div class="feat-card reveal">
-          <div class="feat-card__icon">🏪</div>
-          <h3>Free Storefront</h3>
-          <p>Your own branded shop page on Xavio. Shareable link. No coding, no hosting fees.</p>
-        </div>
-        <div class="feat-card reveal">
-          <div class="feat-card__icon">📣</div>
-          <h3>Creator Distribution</h3>
-          <p>Your products get promoted by thousands of creators in relevant niches — at zero upfront cost.</p>
-        </div>
-        <div class="feat-card reveal">
-          <div class="feat-card__icon">💳</div>
-          <h3>UPI + All Payment Modes</h3>
-          <p>Accept UPI, cards, net banking, wallets. Xavio handles all payment processing and fraud protection.</p>
-        </div>
-        <div class="feat-card reveal">
-          <div class="feat-card__icon">📦</div>
-          <h3>Order Management</h3>
-          <p>Track orders, manage inventory, print shipping labels — all from the Xavio seller dashboard.</p>
-        </div>
-        <div class="feat-card reveal">
-          <div class="feat-card__icon">📊</div>
-          <h3>Sales Analytics</h3>
-          <p>See which creators drive the most sales. Which products convert best. Optimize your catalogue with data.</p>
-        </div>
-        <div class="feat-card reveal">
-          <div class="feat-card__icon">⭐</div>
-          <h3>Verified Seller Badge</h3>
-          <p>Get verified to build buyer trust. Verified sellers see 3x higher conversion rates on average.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="aud-testimonials">
-    <div class="container">
-      <div class="section-label reveal">Seller Stories</div>
-      <h2 class="section-h2 reveal">Real Sellers. <span class="grad-green">Real Growth.</span></h2>
-      <div class="testi-grid">
-        <div class="testi-card reveal">
-          <div class="testi-card__stars">★★★★★</div>
-          <p class="testi-card__quote">"I was selling on WhatsApp manually. Xavio gave me a proper storefront, and creators started promoting my sarees without me asking. Sales tripled in 60 days."</p>
-          <div class="testi-card__author">
-            <div class="testi-card__av" style="background:linear-gradient(135deg,#f472b6,#a855f7)">M</div>
-            <div><strong>Meena Agarwal</strong><span>Saree Seller, Surat</span></div>
-          </div>
-        </div>
-        <div class="testi-card reveal">
-          <div class="testi-card__stars">★★★★★</div>
-          <p class="testi-card__quote">"The creator commission model is genius. I pay 25% only on actual sales. My customer acquisition cost dropped by 80% compared to running Facebook ads."</p>
-          <div class="testi-card__author">
-            <div class="testi-card__av" style="background:linear-gradient(135deg,#34d399,#059669)">V</div>
-            <div><strong>Vikram Shah</strong><span>Electronics Seller, Ahmedabad</span></div>
-          </div>
-        </div>
-        <div class="testi-card reveal">
-          <div class="testi-card__stars">★★★★★</div>
-          <p class="testi-card__quote">"I launched my homemade pickle business on Xavio with zero investment. 340 orders in the first month. Xavio is the best thing that happened to small sellers in India."</p>
-          <div class="testi-card__author">
-            <div class="testi-card__av" style="background:linear-gradient(135deg,#fb923c,#ef4444)">S</div>
-            <div><strong>Sunita Patel</strong><span>Home Food Seller, Pune</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-label reveal">FAQ</div>
-      <h2 class="section-h2 reveal">Seller <span class="grad-green">Questions Answered</span></h2>
-      <div class="faq__list">
-        <div class="faq__item">
-          <button class="faq__q" onclick="toggleFaq(this)" aria-expanded="false">
-            What types of products can I sell on Xavio?
-            <span class="faq__icon">+</span>
-          </button>
-          <div class="faq__a"><p>Fashion, electronics, home decor, food, beauty, handicrafts, digital products, services — virtually any legal product or service. Xavio supports both physical and digital goods with separate fulfilment flows.</p></div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__q" onclick="toggleFaq(this)" aria-expanded="false">
-            How much does Xavio charge sellers?
-            <span class="faq__icon">+</span>
-          </button>
-          <div class="faq__a"><p>Listing is free. Xavio charges a 5% platform fee on each sale, plus the creator commission you set (minimum 15%, recommended 25%). There are no monthly fees, no setup charges, and no hidden costs.</p></div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__q" onclick="toggleFaq(this)" aria-expanded="false">
-            Do I need GST registration to sell?
-            <span class="faq__icon">+</span>
-          </button>
-          <div class="faq__a"><p>For sales under ₹40 lakh/year, GST registration is not mandatory. Xavio handles TDS deduction and provides Form 16A for your tax filings. If you are GST-registered, you can add your GSTIN to issue proper tax invoices.</p></div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__q" onclick="toggleFaq(this)" aria-expanded="false">
-            How do returns and refunds work?
-            <span class="faq__icon">+</span>
-          </button>
-          <div class="faq__a"><p>You set your own return policy (7-day, 15-day, or no returns). Xavio mediates disputes. For approved returns, the refund is deducted from your next payout. Xavio's buyer protection covers only genuine defective/wrong item cases.</p></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="aud-cta" id="download">
-    <div class="container">
-      <div class="aud-cta__inner reveal">
-        <h2>Open Your Store <span class="grad-hero">in 5 Minutes. Free.</span></h2>
-        <p>Join 50,000+ sellers already growing on Xavio. No website. No tech skills. Just your products.</p>
-        <div class="aud-cta__btns">
-          <a href="#" class="btn btn--store">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-            App Store
-          </a>
-          <a href="#" class="btn btn--store">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.3.17.65.19.96.07l12.45-7.19-2.63-2.63-10.78 9.75zm-1.12-20.9C2.03 3.1 2 3.35 2 3.61v16.78c0 .26.03.51.06.76l11.04-11.04L2.06 2.86zM20.49 10.3l-2.66-1.54-2.97 2.97 2.97 2.97 2.69-1.55c.77-.44.77-1.41-.03-1.85zM4.14.24C3.83.12 3.48.14 3.18.31L14.4 11.53 17.03 8.9 4.14.24z"/></svg>
-            Google Play
-          </a>
-        </div>
-        <p class="aud-cta__note">Free forever · Zero listing fees · Instant UPI payouts</p>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__top">
-        <div class="footer__brand">
-          <a href="index.html" class="nav__logo"><span class="nav__logo-mark">X</span><span class="nav__logo-text">avio</span></a>
-          <p>India's #1 social commerce platform.</p>
-        </div>
-        <div class="footer__links">
-          <div class="footer__col"><h4>For You</h4>
-            <a href="for-creators.html">Creators</a>
-            <a href="for-sellers.html">Sellers</a>
-            <a href="for-merchants.html">Merchants</a>
-            <a href="for-advertisers.html">Advertisers</a>
-          </div>
-          <div class="footer__col"><h4>Company</h4>
-            <a href="#">About</a><a href="#">Blog</a><a href="#">Careers</a>
-          </div>
-          <div class="footer__col"><h4>Legal</h4>
-            <a href="#">Privacy Policy</a><a href="#">Terms</a>
-          </div>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <p>&copy; 2025 Xavio Technologies Pvt. Ltd. All rights reserved.</p>
-        <p>Made with ❤️ in India</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- COMPETITION FEAR -->
-  <section class="competition-fear reveal">
-    <div class="container">
-      <div class="fear-card">
-        <div class="fear-icon">⚠️</div>
-        <h3>Feels Like Meesho Early Days — If You Delay, Competition Will Increase</h3>
-        <p>Sellers who join Xavio now get first-mover advantage in their category and city. Early sellers build reviews, ratings, and creator relationships that late joiners can't replicate.</p>
-        <div class="fear-stats">
-          <div class="fear-stat"><span>+1,800</span><small>new sellers this week</small></div>
-          <div class="fear-stat"><span>340</span><small>avg. orders/month per seller</small></div>
-          <div class="fear-stat"><span>24 hrs</span><small>to your first order</small></div>
-        </div>
-        <a href="#download" class="btn btn--primary">Start Scaling Today →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- VIRAL REFERRAL LOOP -->
-  <section class="referral-section reveal">
-    <div class="container">
-      <div class="referral-card">
-        <h3>Invite 3 Seller Friends → Unlock <span class="grad-green">Free Creator Boost 🚀</span></h3>
-        <p>Share Xavio with 3 seller friends and unlock free creator promotion for your top 5 products — worth ₹3,000 in organic reach.</p>
-        <div class="referral-steps">
-          <div class="ref-step">1. Copy your invite link</div>
-          <div class="ref-arrow">→</div>
-          <div class="ref-step">2. Share on WhatsApp</div>
-          <div class="ref-arrow">→</div>
-          <div class="ref-step">3. Unlock Free Creator Boost 🚀</div>
-        </div>
-        <a href="https://wa.me/?text=Found%20a%20crazy%20way%20to%20get%20orders%20without%20stock.%20People%20are%20getting%20orders%20within%201%E2%80%932%20days.%20No%20investment%20needed.%20I%E2%80%99m%20trying%20it%20today.%20Check%20this%3A%20https%3A%2F%2Fwww.xavio.in%2Ffor-sellers.html" class="btn-whatsapp" target="_blank" rel="noopener">
-          📲 Share on WhatsApp &amp; Unlock Boost
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- EXIT INTENT MODAL -->
-  <div class="exit-modal" id="exitModal">
-    <div class="exit-modal-content">
-      <button class="exit-close" onclick="closeExitModal()">✕</button>
-      <div class="exit-icon">🛒</div>
-      <h3>Wait — Your First Order Could Come Tomorrow</h3>
-      <p>Sellers who open their Xavio store today get <strong>free creator promotion</strong> on their first 10 products. This offer expires in 48 hours.</p>
-      <a href="#download" class="btn btn--primary" onclick="closeExitModal()">Open My Free Store →</a>
-      <button class="exit-dismiss" onclick="closeExitModal()">I'll miss this offer</button>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto reveal">
+      <div class="stat-card"><span class="stat-number grad-green">10K+</span><span class="stat-label">Active Sellers</span></div><div class="stat-card"><span class="stat-number grad-green">200+</span><span class="stat-label">Avg Monthly Orders</span></div><div class="stat-card"><span class="stat-number grad-green">2%</span><span class="stat-label">Platform Fee (Premium)</span></div><div class="stat-card"><span class="stat-number grad-green">24hr</span><span class="stat-label">First Order</span></div>
     </div>
   </div>
-  <div class="modal-overlay" id="modalOverlay" onclick="closeExitModal()"></div>
+</section>
 
-  <script src="assets/js/main.js"></script>
-  <script>
-    // Profit Calculator
-    function sellerProfit() {
-      const products = parseInt(document.getElementById('sellerProducts').value);
-      const price = parseInt(document.getElementById('sellerPrice').value);
-      const ordersPerProduct = products <= 5 ? 12 : products <= 10 ? 20 : products <= 25 ? 35 : 60;
-      const totalOrders = Math.floor(ordersPerProduct * (0.7 + Math.random() * 0.6));
-      const revenue = totalOrders * price;
-      const profit = Math.floor(revenue * 0.72); // after 5% platform + 23% creator commission
-      document.getElementById('sellerResult').innerHTML = `
-        <div class="sim-output">
-          <div class="sim-metric"><span class="sim-val">${totalOrders} orders</span><small>estimated monthly orders</small></div>
-          <div class="sim-metric"><span class="sim-val">₹${profit.toLocaleString('en-IN')}</span><small>estimated monthly profit</small></div>
-          <a href="#download" class="btn btn--primary" style="margin-top:1rem">Start Scaling Today →</a>
-        </div>`;
-    }
-    // Live orders feed
-    const orders = [
-      'Order received from Delhi — ₹1,200', 'Order received from Mumbai — ₹890', '5 products sold in Bangalore',
-      'New seller joined from Hyderabad', 'Order received from Chennai — ₹2,400', '3 orders in the last 10 minutes',
-      'Order received from Pune — ₹650', 'Seller earned ₹8,400 today', 'Order received from Jaipur — ₹1,800'
-    ];
-    let oi = 0;
-    setInterval(() => {
-      const el = document.getElementById('orderFeed');
-      if (el) { oi = (oi + 1) % orders.length; el.textContent = orders[oi]; }
-    }, 2500);
-    // Sticky CTA
-    window.addEventListener('scroll', () => {
-      const hero = document.getElementById('hero');
-      const dl = document.getElementById('download');
-      const sticky = document.getElementById('stickyCta');
-      if (!sticky) return;
-      const heroBottom = hero ? hero.getBoundingClientRect().bottom : 0;
-      const dlTop = dl ? dl.getBoundingClientRect().top : window.innerHeight;
-      sticky.style.display = (heroBottom < 0 && dlTop > window.innerHeight) ? 'flex' : 'none';
-    });
-    // Exit intent
-    let exitShown = false;
-    document.addEventListener('mouseleave', (e) => {
-      if (e.clientY <= 0 && !exitShown) {
-        exitShown = true;
-        document.getElementById('exitModal').classList.add('active');
-        document.getElementById('modalOverlay').classList.add('active');
-      }
-    });
-    function closeExitModal() {
-      document.getElementById('exitModal').classList.remove('active');
-      document.getElementById('modalOverlay').classList.remove('active');
-    }
-  </script>
+<section class="section" id="features">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-16 reveal"><p class="section-label">Features</p><h2 class="section-title">Built for <span class="grad-green">Xavio for Sellers</span></h2></div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="feature-card reveal"><div class="feature-icon">🎯</div><h3 class="text-lg font-bold text-white mb-2">Creator-Powered Sales</h3><p class="text-sm text-gray-500 leading-relaxed">Creators with engaged audiences sell your products through authentic story posts. 10x better conversion than paid ads.</p><span class="feature-stat">10x conversion</span></div><div class="feature-card reveal"><div class="feature-icon">🛍️</div><h3 class="text-lg font-bold text-white mb-2">Story Storefront</h3><p class="text-sm text-gray-500 leading-relaxed">Your products appear in creator stories with a direct buy button. Frictionless checkout. One-tap purchase.</p><span class="feature-stat">1-tap checkout</span></div><div class="feature-card reveal"><div class="feature-icon">📊</div><h3 class="text-lg font-bold text-white mb-2">Sales Analytics</h3><p class="text-sm text-gray-500 leading-relaxed">Track which creators drive the most sales, which products convert best, and your real-time revenue dashboard.</p><span class="feature-stat">Live tracking</span></div><div class="feature-card reveal"><div class="feature-icon">💸</div><h3 class="text-lg font-bold text-white mb-2">Performance-Based Pay</h3><p class="text-sm text-gray-500 leading-relaxed">Pay creators only when they make a sale. Set your own commission rates. Zero upfront ad spend.</p><span class="feature-stat">Pay per sale</span></div><div class="feature-card reveal"><div class="feature-icon">📦</div><h3 class="text-lg font-bold text-white mb-2">Order Management</h3><p class="text-sm text-gray-500 leading-relaxed">Manage all orders from one dashboard. Automated notifications. Integrated with major shipping partners.</p><span class="feature-stat">Auto-notifications</span></div><div class="feature-card reveal"><div class="feature-icon">⭐</div><h3 class="text-lg font-bold text-white mb-2">Creator Vetting</h3><p class="text-sm text-gray-500 leading-relaxed">We verify all creators. You see their engagement rates, audience demographics, and past performance before partnering.</p><span class="feature-stat">Verified creators</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-xdark-surface" id="simulator">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-12 reveal"><p class="section-label">Calculator</p><h2 class="section-title">How Much Will <span class="grad-warm">You Earn?</span></h2></div>
+    <div class="sim-card reveal">
+      <div class="grid md:grid-cols-2 gap-6 mb-6">
+        <div><label class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 block">Products Listed</label><input type="number" class="sim-input" id="simInput" placeholder="e.g. 20" min="100" /></div>
+        <div><label class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 block">Posts / Activity Per Week</label><input type="number" class="sim-input" id="simPosts" placeholder="e.g. 5" min="1" max="21" /></div>
+      </div>
+      <button onclick="calcAudienceEarnings()" class="btn-primary w-full">Calculate &rarr;</button>
+      <div class="sim-result" id="simResult"><span class="sim-result__amount" id="simAmount">₹0</span><span class="sim-result__note">Estimated monthly result on Xavio. Actual results may vary.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="pricing">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-12 reveal"><p class="section-label">Pricing</p><h2 class="section-title">Simple, <span class="grad-gold">Transparent Pricing</span></h2></div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+      <div class="pricing-card reveal">
+        <h3 class="text-lg font-bold text-white">Seller Free</h3>
+        <div><span class="price-amount">₹0</span><span class="price-period">/month</span></div>
+        <ul class="flex flex-col gap-2 mt-2"><li class='price-feature'>List up to 20 products</li><li class='price-feature'>Story storefront</li><li class='price-feature'>Basic order management</li><li class='price-feature'>5% platform fee per sale</li><li class='price-feature'>UPI payouts (weekly)</li></ul>
+        <a href="#download" class="btn-ghost w-full text-center mt-4 block">Start Free</a>
+      </div>
+      <div class="pricing-card featured reveal">
+        <div class="pricing-badge">Most Popular</div>
+        <h3 class="text-lg font-bold text-white">Seller Premium</h3>
+        <div><span class="price-amount">₹799</span><span class="price-period">/month</span></div>
+        <ul class="flex flex-col gap-2 mt-2"><li class='price-feature'>Unlimited product listings</li><li class='price-feature'>Reduced platform fee (2%)</li><li class='price-feature'>Creator collaboration tools</li><li class='price-feature'>Advanced inventory management</li><li class='price-feature'>Daily payouts</li><li class='price-feature'>Priority customer support</li><li class='price-feature'>Bulk order discounts</li></ul>
+        <a href="#download" class="btn-primary w-full text-center mt-4 block">Start 14-Day Free Trial</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-xdark-surface" id="testimonials">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-12 reveal"><p class="section-label">Success Stories</p><h2 class="section-title">Real <span class="grad-green">Results</span></h2></div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="testi-card reveal"><div class="testi-stars">★★★★★</div><p class="testi-text">"My clothing brand went from 20 orders/month to 200 orders/month after partnering with Xavio creators. The ROI is insane compared to Instagram ads."</p><div class="testi-author"><div class="testi-avatar">R</div><div><p class="text-sm font-semibold text-white">Rahul Mehta</p><p class="text-xs text-gray-500">Clothing Brand Owner, Delhi</p></div></div></div><div class="testi-card reveal"><div class="testi-stars">★★★★★</div><p class="testi-text">"I got my first order within 6 hours of listing. The creator who promoted my product had the exact audience I was targeting. Zero wasted spend."</p><div class="testi-author"><div class="testi-avatar">S</div><div><p class="text-sm font-semibold text-white">Sunita Patel</p><p class="text-xs text-gray-500">Handmade Jewelry Seller, Jaipur</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-12 reveal"><p class="section-label">FAQ</p><h2 class="section-title">Common <span class="grad-green">Questions</span></h2></div>
+    <div><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How do I find creators to sell my products?<span class="faq-icon">+</span></button><div class="faq-a">Our AI automatically matches you with creators whose audience fits your product category. You can also browse and invite creators directly.</div></div><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What commission should I offer creators?<span class="faq-icon">+</span></button><div class="faq-a">We recommend 8–15% for most product categories. Higher commissions attract top creators. You set the rate and can change it anytime.</div></div><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What if a creator posts bad content about my brand?<span class="faq-icon">+</span></button><div class="faq-a">You approve all content before it goes live. You also have brand safety controls to set content guidelines for creators.</div></div><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How are returns handled?<span class="faq-icon">+</span></button><div class="faq-a">Returns follow your existing return policy. Xavio handles the logistics coordination and creator commission adjustments automatically.</div></div></div>
+  </div>
+</section>
+
+<section class="section bg-xdark-surface text-center" id="download">
+  <div class="max-w-2xl mx-auto reveal">
+    <div class="text-5xl mb-6">🛍️</div>
+    <h2 class="section-title"><span class="grad-hero">List Your Products Free Today.</span></h2>
+    <p class="section-sub mx-auto mb-8">Join thousands of sellers already earning on Xavio. Free forever. No credit card needed.</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+      <a href="#" class="btn-primary text-base px-8 py-4">📱 Download for iOS</a>
+      <a href="#" class="btn-primary text-base px-8 py-4">🤖 Download for Android</a>
+    </div>
+    <p class="text-xs text-gray-600">Available on iOS 14+ and Android 8+. 4.9★ rating on both stores.</p>
+  </div>
+</section>
+
+<footer class="xfooter">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
+      <div class="col-span-2 md:col-span-1">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="logo-icon">X</span>
+          <span class="text-xl font-black text-white tracking-tight" style="-webkit-text-fill-color:white">avio</span>
+        </div>
+        <p class="text-sm text-gray-500 max-w-xs">India's first social commerce platform. Turn your status into a storefront.</p>
+      </div>
+      <div>
+        <p class="text-sm font-semibold text-white mb-4">Platform</p>
+        <ul class="flex flex-col gap-2">
+          <li><a href="for-creators.html" class="text-sm text-gray-500 hover:text-brand transition-colors">For Creators</a></li>
+          <li><a href="for-sellers.html" class="text-sm text-gray-500 hover:text-brand transition-colors">For Sellers</a></li>
+          <li><a href="for-merchants.html" class="text-sm text-gray-500 hover:text-brand transition-colors">For Merchants</a></li>
+          <li><a href="for-advertisers.html" class="text-sm text-gray-500 hover:text-brand transition-colors">For Advertisers</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-sm font-semibold text-white mb-4">Features</p>
+        <ul class="flex flex-col gap-2">
+          <li><a href="#features" class="text-sm text-gray-500 hover:text-brand transition-colors">Status Stories</a></li>
+          <li><a href="#features" class="text-sm text-gray-500 hover:text-brand transition-colors">Creator Marketplace</a></li>
+          <li><a href="#features" class="text-sm text-gray-500 hover:text-brand transition-colors">Live Commerce</a></li>
+          <li><a href="#features" class="text-sm text-gray-500 hover:text-brand transition-colors">Analytics</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-sm font-semibold text-white mb-4">Company</p>
+        <ul class="flex flex-col gap-2">
+          <li><a href="#" class="text-sm text-gray-500 hover:text-brand transition-colors">About</a></li>
+          <li><a href="#" class="text-sm text-gray-500 hover:text-brand transition-colors">Blog</a></li>
+          <li><a href="#" class="text-sm text-gray-500 hover:text-brand transition-colors">Careers</a></li>
+          <li><a href="#" class="text-sm text-gray-500 hover:text-brand transition-colors">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-sm font-semibold text-white mb-4">Legal</p>
+        <ul class="flex flex-col gap-2">
+          <li><a href="#" class="text-sm text-gray-500 hover:text-brand transition-colors">Privacy Policy</a></li>
+          <li><a href="#" class="text-sm text-gray-500 hover:text-brand transition-colors">Terms of Service</a></li>
+          <li><a href="#" class="text-sm text-gray-500 hover:text-brand transition-colors">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-xs text-gray-600">&copy; 2025 Xavio. All rights reserved. Made with love in India.</p>
+      <div class="flex gap-6">
+        <a href="#" class="text-xs text-gray-600 hover:text-brand transition-colors">Twitter</a>
+        <a href="#" class="text-xs text-gray-600 hover:text-brand transition-colors">Instagram</a>
+        <a href="#" class="text-xs text-gray-600 hover:text-brand transition-colors">LinkedIn</a>
+        <a href="#" class="text-xs text-gray-600 hover:text-brand transition-colors">YouTube</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="sticky-cta" id="stickyCta">
+  <p class="text-sm text-white font-medium hidden md:block">Join 50,000+ users already earning on Xavio</p>
+  <a href="#download" class="btn-primary ml-auto">List Your Products Free</a>
+  <button onclick="document.getElementById('stickyCta').style.display='none'" class="text-gray-500 hover:text-white text-2xl leading-none ml-2">&times;</button>
+</div>
+<div class="exit-modal" id="exitModal">
+  <div class="exit-modal__box">
+    <div class="text-5xl mb-4">🎁</div>
+    <h3 class="text-xl font-black text-white mb-2">Wait — One Last Thing!</h3>
+    <p class="text-sm text-gray-500 mb-6">Get 3 months of Xavio Premium FREE when you sign up today. Limited to the next 47 sellers.</p>
+    <a href="#download" class="btn-primary w-full text-center block mb-3">Claim My Spot</a>
+    <button onclick="document.getElementById('exitModal').style.display='none'" class="text-xs text-gray-600 hover:text-white transition-colors">No thanks, I don't want free money</button>
+  </div>
+</div>
+<script>
+function calcAudienceEarnings() {
+  const input = parseFloat(document.getElementById('simInput').value) || 0;
+  const posts = parseFloat(document.getElementById('simPosts').value) || 0;
+  const result = Math.round(input * posts * 4 * 800 * 0.05);
+  const el = document.getElementById('simResult');
+  const amEl = document.getElementById('simAmount');
+  if (result > 0) {
+    amEl.textContent = '₹' + Math.round(result).toLocaleString('en-IN');
+    el.classList.add('show');
+  }
+}
+</script>
+  <script src="assets/js/xavio.js"></script>
 </body>
 </html>

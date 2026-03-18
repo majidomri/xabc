@@ -1,484 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Xavio for Creators — Earn ₹50,000/Month from Your Stories</title>
-  <meta name="description" content="Turn your social media stories into a full-time income. Xavio creators earn an average ₹50,000/month selling products, services, and affiliate commissions.">
-  <meta name="keywords" content="earn money from stories, creator monetization India, social commerce creator, affiliate marketing app India, Xavio creator">
-  <meta property="og:title" content="Xavio for Creators — Earn from Every Story You Post">
-  <meta property="og:description" content="2.4M+ creators already earning on Xavio. Tag products in stories, earn commissions, build your storefront. Free to start.">
-  <meta property="og:type" content="website">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://xavio.in/for-creators">
-  <meta name="ai-content-type" content="creator-landing-page" />
-  <meta name="audience" content="content-creators, influencers, social-media-users" />
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/audience.css">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Xavio for Creators",
-    "description": "Monetize your stories with Xavio. Tag products, earn commissions, build a storefront.",
-    "url": "https://xavio.in/for-creators",
-    "mainEntity": {
-      "@type": "SoftwareApplication",
-      "name": "Xavio",
-      "applicationCategory": "SocialNetworkingApplication",
-      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" }
-    }
-  }
-  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xavio for Creators — Earn ₹50K/Month from Your Stories</title>
+  <meta name="description" content="Turn your social media following into a revenue stream. Post stories, earn commissions, get brand deals. Join 30,000+ creators earning on Xavio." />
+  <meta property="og:title" content="Xavio for Creators — Earn ₹50K/Month from Your Stories" />
+  <meta property="og:description" content="Turn your social media following into a revenue stream. Post stories, earn commissions, get brand deals. Join 30,000+ creators earning on Xavio." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://xavio.in/for-creators.html" />
+  <link rel="stylesheet" href="assets/css/xavio.css" />
 </head>
-<body class="audience-page creators-page">
-
-  <!-- STICKY MOBILE CTA -->
-  <div class="sticky-cta" id="stickyCta" style="display:none">
-    <span>🚀 <strong>50,000+ creators</strong> growing on Xavio — join free</span>
-    <a href="#download" class="btn-sticky">Start Creating Free</a>
+<body>
+<nav class="xnav" id="xnav">
+  <div class="flex items-center gap-2">
+    <span class="logo-icon">X</span>
+    <span class="text-xl font-black text-white tracking-tight" style="-webkit-text-fill-color:white">avio</span>
   </div>
-
-  <!-- REWARD HOOK BAR -->
-  <div class="reward-bar">
-    <span>🎁 Early creators get a <strong>Top Rated Badge</strong> + ₹500 bonus — <strong>limited spots left</strong> · <a href="#download" style="color:inherit;text-decoration:underline">Claim yours →</a></span>
+  <div class="xnav__links"><a href="#features" class="text-sm text-gray-400 hover:text-white transition-colors duration-200">Features</a>
+<a href="for-creators.html" class="text-sm text-brand font-semibold transition-colors duration-200">Creators</a>
+<a href="for-sellers.html" class="text-sm text-gray-400 hover:text-white transition-colors duration-200">Sellers</a>
+<a href="for-merchants.html" class="text-sm text-gray-400 hover:text-white transition-colors duration-200">Merchants</a>
+<a href="for-advertisers.html" class="text-sm text-gray-400 hover:text-white transition-colors duration-200">Advertisers</a>
+<a href="#pricing" class="text-sm text-gray-400 hover:text-white transition-colors duration-200">Pricing</a></div>
+  <div class="xnav__actions">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☀</button>
+    <a href="#download" class="btn-ghost hidden md:inline-flex">Log in</a>
+    <a href="#download" class="btn-primary hidden md:inline-flex">Get Started Free</a>
+    <button class="theme-toggle md:hidden" id="navBurger" aria-label="Menu">☰</button>
   </div>
+  <div class="xnav__mobile" id="navMobile">
+        <a href="#features">Features</a>
+    <a href="for-creators.html">Creators</a>
+    <a href="for-sellers.html">Sellers</a>
+    <a href="for-merchants.html">Merchants</a>
+    <a href="for-advertisers.html">Advertisers</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#download" class="btn-primary text-center mt-2">Get Started Free</a>
+  </div>
+</nav>
+<div class="reward-bar">🎁 Creator Bonus: First 5,000 creators get Verified Badge + 3 months Premium FREE — <a href="#download" class="underline font-bold">Claim Now →</a></div>
+<div class="live-feed-bar" id="liveFeed">🔴 Live: Neha from Pune just earned ₹3,200 from a single story post</div>
 
-  <!-- NAV -->
-  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
-    <div class="nav__inner container">
-      <a href="index.html" class="nav__logo" aria-label="Xavio Home">
-        <span class="nav__logo-mark">X</span><span class="nav__logo-text">avio</span>
-      </a>
-      <ul class="nav__links" role="list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="for-creators.html" aria-current="page">Creators</a></li>
-        <li><a href="for-sellers.html">Sellers</a></li>
-        <li><a href="for-merchants.html">Merchants</a></li>
-        <li><a href="for-advertisers.html">Advertisers</a></li>
-      </ul>
-      <div class="nav__actions">
-        <a href="#download" class="btn btn--primary btn--sm">Start Free</a>
-      </div>
-      <button class="nav__burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+<section class="section pt-32 pb-20 text-center relative overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none" style="background:radial-gradient(ellipse 80% 50% at 50% -10%,rgba(0,200,150,.12),transparent)"></div>
+  <div class="max-w-4xl mx-auto relative">
+    <div class="hero-badge reveal">🎨 For Content Creators</div>
+    <h1 class="hero-title reveal">Post Stories.<br>Earn <span class="grad-text">₹50,000/Month.</span></h1>
+    <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-8 reveal">Your audience trusts you. Xavio turns that trust into income. Post product stories, earn affiliate commissions, and get paid brand deals — all from one app.</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center mb-10 reveal">
+      <a href="#download" class="btn-primary text-base px-8 py-4">Start Earning Free &rarr;</a>
+      <a href="#features" class="btn-ghost text-base px-8 py-4">See How It Works</a>
     </div>
-    <div class="nav__mobile" id="navMobile" aria-hidden="true">
-      <a href="index.html">Home</a>
-      <a href="for-creators.html">Creators</a>
-      <a href="for-sellers.html">Sellers</a>
-      <a href="for-merchants.html">Merchants</a>
-      <a href="for-advertisers.html">Advertisers</a>
-      <a href="#download" class="btn btn--primary">Start Free</a>
+    <div class="flex flex-wrap justify-center gap-6 text-sm text-gray-500 mb-12 reveal">
+      <span>✓ No credit card required</span><span>✓ Free forever plan</span><span>✓ Setup in 2 minutes</span><span>✓ UPI instant payouts</span>
     </div>
-  </nav>
-
-  <!-- HERO -->
-  <section class="aud-hero" id="hero">
-    <div class="container">
-      <div class="aud-hero__badge">👑 For Creators</div>
-      <h1 class="aud-hero__h1">Get <span class="grad-green">10K–50K Reach</span><br>on Every Post</h1>
-      <p class="aud-hero__sub">2.4M+ creators on Xavio earn commissions, sell products, and build full-time income from the stories they were already posting for free.</p>
-      <div class="aud-hero__proof">
-        <span>⭐ 4.9/5 from 180,000 creators</span>
-        <span>•</span>
-        <span>₹240 Cr+ paid out to creators</span>
-        <span>•</span>
-        <span>First payout in 24 hrs</span>
-      </div>
-      <!-- MICRO TRUST TRIGGERS -->
-      <div class="micro-trust">
-        <span>✅ Free to join</span>
-        <span>✅ Earn from day 1</span>
-        <span>✅ No followers needed</span>
-        <span>✅ Top Rated badge in 7 days</span>
-      </div>
-      <div class="aud-hero__ctas">
-        <a href="#download" class="btn btn--primary btn--lg">Start Creating Free →</a>
-        <a href="#simulator" class="btn btn--ghost btn--lg">Check Your Reach</a>
-      </div>
-      <!-- LIVE ROI COUNTER -->
-      <div class="live-roi-bar">
-        <span>🔥 Creators earned</span>
-        <span class="roi-live" id="roiLive">₹0</span>
-        <span>today on Xavio</span>
-      </div>
-    </div>
-
-    <!-- LEADERBOARD WIDGET -->
-    <div class="leaderboard-float">
-      <div class="leaderboard-card">
-        <div class="leaderboard-header">
-          <span>🏆 Top Creators Today</span>
-          <span class="live-dot">● LIVE</span>
-        </div>
-        <div class="leaderboard-list">
-          <div class="leaderboard-item rank-1"><span class="rank">#1</span><span class="creator-name">Ravi K. 🧑</span><span class="creator-reach">48.2K reach</span><span class="creator-earn">₹12,400</span></div>
-          <div class="leaderboard-item rank-2"><span class="rank">#2</span><span class="creator-name">Sneha M. ⭐</span><span class="creator-reach">41.7K reach</span><span class="creator-earn">₹9,800</span></div>
-          <div class="leaderboard-item rank-3"><span class="rank">#3</span><span class="creator-name">Arjun S. 💎</span><span class="creator-reach">38.1K reach</span><span class="creator-earn">₹8,200</span></div>
-          <div class="leaderboard-item"><span class="rank">#4</span><span class="creator-name">Priya D.</span><span class="creator-reach">29.4K reach</span><span class="creator-earn">₹6,100</span></div>
-          <div class="leaderboard-item you-row"><span class="rank">You?</span><span class="creator-name">Your Name</span><span class="creator-reach">?? reach</span><span class="creator-earn">₹??</span></div>
-        </div>
-        <a href="#download" class="leaderboard-cta">Join the Leaderboard →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- INCOME PROOF STRIP -->
-  <section class="income-strip">
-    <div class="container">
-      <div class="income-strip__grid">
-        <div class="income-strip__item reveal">
-          <div class="income-strip__val grad-green">₹12,400</div>
-          <div class="income-strip__lbl">Avg. first-month earnings</div>
-        </div>
-        <div class="income-strip__item reveal">
-          <div class="income-strip__val grad-green">₹50,000</div>
-          <div class="income-strip__lbl">Avg. monthly at 90 days</div>
-        </div>
-        <div class="income-strip__item reveal">
-          <div class="income-strip__val grad-green">₹5 Lakh+</div>
-          <div class="income-strip__lbl">Top creator monthly income</div>
-        </div>
-        <div class="income-strip__item reveal">
-          <div class="income-strip__val grad-green">25%</div>
-          <div class="income-strip__lbl">Commission on every sale</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- STATUS SIMULATOR -->
-  <section class="simulator-section" id="simulator">
-    <div class="container">
-      <div class="section-label reveal">Interactive Tool</div>
-      <h2 class="section-h2 reveal">Check Your <span class="grad-green">Reach Potential</span></h2>
-      <p class="section-sub reveal">See how many people your next status could reach on Xavio</p>
-      <div class="simulator-card reveal">
-        <div class="sim-inputs">
-          <div class="sim-input-group">
-            <label>Your niche</label>
-            <select id="simNiche">
-              <option value="lifestyle">Lifestyle</option>
-              <option value="food">Food</option>
-              <option value="business">Business</option>
-              <option value="fashion">Fashion</option>
-              <option value="tech">Tech</option>
-              <option value="fitness">Fitness</option>
-            </select>
-          </div>
-          <div class="sim-input-group">
-            <label>Posts per week</label>
-            <select id="simFreq">
-              <option value="1">1–2 posts</option>
-              <option value="3">3–5 posts</option>
-              <option value="7">Daily posts</option>
-            </select>
-          </div>
-        </div>
-        <button class="btn btn--primary" onclick="creatorSim()">🚀 Check My Reach</button>
-        <div class="sim-result" id="creatorResult"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW IT WORKS -->
-  <section class="how" id="how">
-    <div class="container">
-      <div class="section-label reveal">How It Works</div>
-      <h2 class="section-h2 reveal">3 Steps to Your <span class="grad-green">First ₹10,000</span></h2>
-      <div class="steps">
-        <div class="step reveal">
-          <div class="step__num">01</div>
-          <h3 class="step__title">Create Your Storefront</h3>
-          <p class="step__desc">Sign up free. Add your niche. Browse 50,000+ affiliate products or list your own. Your storefront is live in under 5 minutes.</p>
-        </div>
-        <div class="step reveal">
-          <div class="step__num">02</div>
-          <h3 class="step__title">Post Stories with Product Tags</h3>
-          <p class="step__desc">Post your regular content — fashion, food, fitness, finance. Tag products in your stories. Followers tap and buy directly.</p>
-        </div>
-        <div class="step reveal">
-          <div class="step__num">03</div>
-          <h3 class="step__title">Get Paid Instantly</h3>
-          <p class="step__desc">Every sale earns you 25% commission. Payouts hit your UPI in 24 hours. No minimum threshold. No waiting 30 days.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CREATOR FEATURES -->
-  <section class="aud-features">
-    <div class="container">
-      <div class="section-label reveal">Creator Tools</div>
-      <h2 class="section-h2 reveal">Everything You Need to <span class="grad-warm">Monetize</span></h2>
-      <div class="feat-grid">
-        <div class="feat-card reveal">
-          <div class="feat-card__icon">🏪</div>
-          <h3>Personal Storefront</h3>
-          <p>Your own branded shop page. Followers can browse and buy without leaving Xavio.</p>
-        </div>
-        <div class="feat-card reveal">
-          <div class="feat-card__icon">🔗</div>
-          <h3>Affiliate Catalogue</h3>
-          <p>50,000+ products from verified merchants. Pick what fits your niche. Tag and earn.</p>
-        </div>
-        <div class="feat-card reveal">
-          <div class="feat-card__icon">📊</div>
-          <h3>Real-Time Analytics</h3>
-          <p>See which stories drive the most sales. Optimize your content with data, not guesswork.</p>
-        </div>
-        <div class="feat-card reveal">
-          <div class="feat-card__icon">💸</div>
-          <h3>Instant UPI Payouts</h3>
-          <p>No 30-day cycles. Earnings hit your bank account within 24 hours of each sale.</p>
-        </div>
-        <div class="feat-card reveal">
-          <div class="feat-card__icon">🎯</div>
-          <h3>Audience Insights</h3>
-          <p>Know your best-performing demographics. Target the right followers with the right products.</p>
-        </div>
-        <div class="feat-card reveal">
-          <div class="feat-card__icon">🤝</div>
-          <h3>Brand Collaborations</h3>
-          <p>Get discovered by brands looking for creators in your niche. Paid partnerships, sponsored stories.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS -->
-  <section class="aud-testimonials">
-    <div class="container">
-      <div class="section-label reveal">Creator Stories</div>
-      <h2 class="section-h2 reveal">Real Creators. <span class="grad-green">Real Income.</span></h2>
-      <div class="testi-grid">
-        <div class="testi-card reveal">
-          <div class="testi-card__stars">★★★★★</div>
-          <p class="testi-card__quote">"I was posting fashion content for free for 2 years. Xavio turned the same content into ₹78,000 last month. I wish I had started sooner."</p>
-          <div class="testi-card__author">
-            <div class="testi-card__av" style="background:linear-gradient(135deg,#f472b6,#a855f7)">P</div>
-            <div><strong>Priya Sharma</strong><span>Fashion Creator, Mumbai</span></div>
-          </div>
-        </div>
-        <div class="testi-card reveal">
-          <div class="testi-card__stars">★★★★★</div>
-          <p class="testi-card__quote">"The UPI payout in 24 hours is a game changer. I've tried 3 other platforms — Xavio is the only one that actually pays on time, every time."</p>
-          <div class="testi-card__author">
-            <div class="testi-card__av" style="background:linear-gradient(135deg,#34d399,#059669)">R</div>
-            <div><strong>Rahul Verma</strong><span>Fitness Creator, Delhi</span></div>
-          </div>
-        </div>
-        <div class="testi-card reveal">
-          <div class="testi-card__stars">★★★★★</div>
-          <p class="testi-card__quote">"I have 12,000 followers — not a mega influencer. But I earn ₹35,000/month consistently because Xavio's affiliate products match my food niche perfectly."</p>
-          <div class="testi-card__author">
-            <div class="testi-card__av" style="background:linear-gradient(135deg,#fb923c,#ef4444)">A</div>
-            <div><strong>Anjali Nair</strong><span>Food Creator, Bangalore</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-label reveal">FAQ</div>
-      <h2 class="section-h2 reveal">Creator <span class="grad-green">Questions Answered</span></h2>
-      <div class="faq__list">
-        <div class="faq__item">
-          <button class="faq__q" onclick="toggleFaq(this)" aria-expanded="false">
-            Do I need a minimum number of followers to join?
-            <span class="faq__icon">+</span>
-          </button>
-          <div class="faq__a"><p>No minimum. Creators with 500 followers earn on Xavio. It's about engagement and niche relevance, not follower count. Many micro-creators with 2,000–5,000 followers earn ₹20,000+/month.</p></div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__q" onclick="toggleFaq(this)" aria-expanded="false">
-            How much commission do I earn per sale?
-            <span class="faq__icon">+</span>
-          </button>
-          <div class="faq__a"><p>Standard affiliate commission is 25% of the product sale price. Premium creators (top 10% by sales) earn 30–35%. If you list your own products, you keep 100% of the margin minus Xavio's 5% platform fee.</p></div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__q" onclick="toggleFaq(this)" aria-expanded="false">
-            When and how do I get paid?
-            <span class="faq__icon">+</span>
-          </button>
-          <div class="faq__a"><p>Payouts are processed within 24 hours of each confirmed sale, directly to your UPI ID. There is no minimum payout threshold — even ₹10 gets transferred. You can also request a bank transfer for larger amounts.</p></div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__q" onclick="toggleFaq(this)" aria-expanded="false">
-            Can I use Xavio alongside Instagram, YouTube, or other platforms?
-            <span class="faq__icon">+</span>
-          </button>
-          <div class="faq__a"><p>Absolutely. Xavio is designed to complement your existing social presence. Share your Xavio story link on Instagram bio, YouTube description, or WhatsApp status to drive traffic and earn commissions from all your channels.</p></div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__q" onclick="toggleFaq(this)" aria-expanded="false">
-            Is the Creator plan really free?
-            <span class="faq__icon">+</span>
-          </button>
-          <div class="faq__a"><p>Yes. The Starter plan is free forever — unlimited stories, personal storefront, affiliate catalogue access, and UPI payouts. The Pro plan (₹299/month) adds advanced analytics, priority brand collaborations, and a verified creator badge.</p></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- COMPETITION FEAR -->
-  <section class="competition-fear reveal">
-    <div class="container">
-      <div class="fear-card">
-        <div class="fear-icon">⚠️</div>
-        <h3>Early Creators Have a Permanent Advantage</h3>
-        <p>Xavio's algorithm rewards early adopters with higher baseline reach. Every week you wait, the competition grows. The creators joining today will be the Top Rated creators of tomorrow.</p>
-        <div class="fear-stats">
-          <div class="fear-stat"><span>+2,400</span><small>creators joined this week</small></div>
-          <div class="fear-stat"><span>Limited</span><small>Top Rated spots per city</small></div>
-          <div class="fear-stat"><span>7 days</span><small>to unlock first badge</small></div>
-        </div>
-        <a href="#download" class="btn btn--primary">Claim Your Spot Now →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- VIRAL REFERRAL LOOP -->
-  <section class="referral-section reveal">
-    <div class="container">
-      <div class="referral-card">
-        <h3>Invite 3 Friends → Unlock <span class="grad-green">Premium Badge 💎</span></h3>
-        <p>Share Xavio with 3 creator friends and unlock your Premium badge instantly — worth ₹2,000/month in extra brand deal access.</p>
-        <div class="referral-steps">
-          <div class="ref-step">1. Copy your invite link</div>
-          <div class="ref-arrow">→</div>
-          <div class="ref-step">2. Share on WhatsApp</div>
-          <div class="ref-arrow">→</div>
-          <div class="ref-step">3. Unlock Premium Badge 💎</div>
-        </div>
-        <a href="https://wa.me/?text=Bro%2C%20creators%20are%20blowing%20up%20on%20this%20new%20app.%20People%20are%20getting%2010K%E2%80%9350K%20reach%20just%20by%20posting%20status.%20And%20they%E2%80%99re%20earning%20from%20it%20too.%20I%20just%20unlocked%20my%20%E2%AD%90%20Top%20Rated%20badge.%20Check%20this%20before%20it%20gets%20crowded%3A%20https%3A%2F%2Fwww.xavio.in%2Ffor-creators.html" class="btn-whatsapp" target="_blank" rel="noopener">
-          📲 Share on WhatsApp &amp; Unlock Badge
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- DOWNLOAD CTA -->
-  <section class="aud-cta" id="download">
-    <div class="container">
-      <div class="aud-cta__inner reveal">
-        <h2>Start Your Creator Journey <span class="grad-hero">Today. Free.</span></h2>
-        <p>Join 2.4M+ creators already earning on Xavio. No credit card. No followers minimum. Just your stories.</p>
-        <div class="aud-cta__btns">
-          <a href="#" class="btn btn--store">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-            App Store
-          </a>
-          <a href="#" class="btn btn--store">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.3.17.65.19.96.07l12.45-7.19-2.63-2.63-10.78 9.75zm-1.12-20.9C2.03 3.1 2 3.35 2 3.61v16.78c0 .26.03.51.06.76l11.04-11.04L2.06 2.86zM20.49 10.3l-2.66-1.54-2.97 2.97 2.97 2.97 2.69-1.55c.77-.44.77-1.41-.03-1.85zM4.14.24C3.83.12 3.48.14 3.18.31L14.4 11.53 17.03 8.9 4.14.24z"/></svg>
-            Google Play
-          </a>
-        </div>
-        <p class="aud-cta__note">Free forever · No credit card · Instant UPI payouts</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__top">
-        <div class="footer__brand">
-          <a href="index.html" class="nav__logo"><span class="nav__logo-mark">X</span><span class="nav__logo-text">avio</span></a>
-          <p>India's #1 social commerce platform. Turn stories into income.</p>
-        </div>
-        <div class="footer__links">
-          <div class="footer__col"><h4>For You</h4>
-            <a href="for-creators.html">Creators</a>
-            <a href="for-sellers.html">Sellers</a>
-            <a href="for-merchants.html">Merchants</a>
-            <a href="for-advertisers.html">Advertisers</a>
-          </div>
-          <div class="footer__col"><h4>Company</h4>
-            <a href="#">About</a>
-            <a href="#">Blog</a>
-            <a href="#">Careers</a>
-            <a href="#">Press</a>
-          </div>
-          <div class="footer__col"><h4>Legal</h4>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Cookie Policy</a>
-          </div>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <p>&copy; 2025 Xavio Technologies Pvt. Ltd. All rights reserved.</p>
-        <p>Made with ❤️ in India</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- EXIT INTENT MODAL -->
-  <div class="exit-modal" id="exitModal">
-    <div class="exit-modal-content">
-      <button class="exit-close" onclick="closeExitModal()">✕</button>
-      <div class="exit-icon">🚀</div>
-      <h3>Wait — Don't Miss Your Early Creator Advantage</h3>
-      <p>Early creators on Xavio get <strong>3X more reach</strong> than those who join later. The window is closing.</p>
-      <a href="#download" class="btn btn--primary" onclick="closeExitModal()">Claim My Spot Now →</a>
-      <button class="exit-dismiss" onclick="closeExitModal()">I'll join later (and lose my advantage)</button>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto reveal">
+      <div class="stat-card"><span class="stat-number grad-green">30K+</span><span class="stat-label">Active Creators</span></div><div class="stat-card"><span class="stat-number grad-green">₹18K</span><span class="stat-label">Avg Monthly Earn</span></div><div class="stat-card"><span class="stat-number grad-green">4.9★</span><span class="stat-label">Creator Rating</span></div><div class="stat-card"><span class="stat-number grad-green">24hr</span><span class="stat-label">Payout Speed</span></div>
     </div>
   </div>
-  <div class="modal-overlay" id="modalOverlay" onclick="closeExitModal()"></div>
+</section>
 
-  <script src="assets/js/main.js"></script>
-  <script>
-    // Status Simulator
-    function creatorSim() {
-      const niche = document.getElementById('simNiche').value;
-      const freq = parseInt(document.getElementById('simFreq').value);
-      const baseReach = { lifestyle: 22000, food: 28000, business: 18000, fashion: 25000, tech: 15000, fitness: 20000 };
-      const freqMult = { 1: 1, 3: 1.8, 7: 2.5 };
-      const reach = Math.floor((baseReach[niche] || 20000) * freqMult[freq] * (0.8 + Math.random() * 0.4));
-      const earn = Math.floor(reach * 0.35);
-      document.getElementById('creatorResult').innerHTML = `
-        <div class="sim-output">
-          <div class="sim-metric"><span class="sim-val">🚀 ${reach.toLocaleString('en-IN')}</span><small>estimated monthly reach</small></div>
-          <div class="sim-metric"><span class="sim-val">₹${earn.toLocaleString('en-IN')}</span><small>estimated monthly earnings</small></div>
-          <a href="#download" class="btn btn--primary" style="margin-top:1rem">Start Earning This →</a>
-        </div>`;
-    }
-    // Live ROI counter
-    setInterval(() => {
-      const val = Math.floor(Math.random() * 200000) + 50000;
-      const el = document.getElementById('roiLive');
-      if (el) el.textContent = '₹' + val.toLocaleString('en-IN');
-    }, 3000);
-    // Sticky CTA
-    window.addEventListener('scroll', () => {
-      const hero = document.getElementById('hero');
-      const dl = document.getElementById('download');
-      const sticky = document.getElementById('stickyCta');
-      if (!sticky) return;
-      const heroBottom = hero ? hero.getBoundingClientRect().bottom : 0;
-      const dlTop = dl ? dl.getBoundingClientRect().top : window.innerHeight;
-      sticky.style.display = (heroBottom < 0 && dlTop > window.innerHeight) ? 'flex' : 'none';
-    });
-    // Exit intent
-    let exitShown = false;
-    document.addEventListener('mouseleave', (e) => {
-      if (e.clientY <= 0 && !exitShown) {
-        exitShown = true;
-        document.getElementById('exitModal').classList.add('active');
-        document.getElementById('modalOverlay').classList.add('active');
-      }
-    });
-    function closeExitModal() {
-      document.getElementById('exitModal').classList.remove('active');
-      document.getElementById('modalOverlay').classList.remove('active');
-    }
-  </script>
+<section class="section" id="features">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-16 reveal"><p class="section-label">Features</p><h2 class="section-title">Built for <span class="grad-green">Xavio for Creators</span></h2></div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="feature-card reveal"><div class="feature-icon">📱</div><h3 class="text-lg font-bold text-white mb-2">Shoppable Stories</h3><p class="text-sm text-gray-500 leading-relaxed">Every story you post becomes a storefront. Followers buy with one tap. You earn a commission on every sale.</p><span class="feature-stat">8–15% commission</span></div><div class="feature-card reveal"><div class="feature-icon">🎯</div><h3 class="text-lg font-bold text-white mb-2">Brand Deal Marketplace</h3><p class="text-sm text-gray-500 leading-relaxed">Brands come to you. Get matched with brands that fit your niche. Negotiate rates. Get paid upfront.</p><span class="feature-stat">₹500–₹50K per deal</span></div><div class="feature-card reveal"><div class="feature-icon">📊</div><h3 class="text-lg font-bold text-white mb-2">Creator Analytics</h3><p class="text-sm text-gray-500 leading-relaxed">See exactly which stories sell. Track clicks, conversions, and earnings in real-time. Know what works.</p><span class="feature-stat">Live data</span></div><div class="feature-card reveal"><div class="feature-icon">💸</div><h3 class="text-lg font-bold text-white mb-2">Daily UPI Payouts</h3><p class="text-sm text-gray-500 leading-relaxed">Earnings hit your bank account every day. No minimum threshold. No 30-day wait like other platforms.</p><span class="feature-stat">24-hour payout</span></div><div class="feature-card reveal"><div class="feature-icon">🤖</div><h3 class="text-lg font-bold text-white mb-2">AI Caption Assistant</h3><p class="text-sm text-gray-500 leading-relaxed">AI writes high-converting captions for your stories. Suggests best posting times. Predicts top-selling products.</p><span class="feature-stat">40% more sales</span></div><div class="feature-card reveal"><div class="feature-icon">⭐</div><h3 class="text-lg font-bold text-white mb-2">Verified Creator Badge</h3><p class="text-sm text-gray-500 leading-relaxed">Premium creators get a verified badge that increases brand deal rates by 3x and follower trust significantly.</p><span class="feature-stat">3x higher rates</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-xdark-surface" id="simulator">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-12 reveal"><p class="section-label">Calculator</p><h2 class="section-title">How Much Will <span class="grad-warm">You Earn?</span></h2></div>
+    <div class="sim-card reveal">
+      <div class="grid md:grid-cols-2 gap-6 mb-6">
+        <div><label class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 block">Your Followers</label><input type="number" class="sim-input" id="simInput" placeholder="e.g. 5000" min="100" /></div>
+        <div><label class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 block">Posts / Activity Per Week</label><input type="number" class="sim-input" id="simPosts" placeholder="e.g. 5" min="1" max="21" /></div>
+      </div>
+      <button onclick="calcAudienceEarnings()" class="btn-primary w-full">Calculate &rarr;</button>
+      <div class="sim-result" id="simResult"><span class="sim-result__amount" id="simAmount">₹0</span><span class="sim-result__note">Estimated monthly result on Xavio. Actual results may vary.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="pricing">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-12 reveal"><p class="section-label">Pricing</p><h2 class="section-title">Simple, <span class="grad-gold">Transparent Pricing</span></h2></div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+      <div class="pricing-card reveal">
+        <h3 class="text-lg font-bold text-white">Creator Free</h3>
+        <div><span class="price-amount">₹0</span><span class="price-period">/month</span></div>
+        <ul class="flex flex-col gap-2 mt-2"><li class='price-feature'>Post unlimited stories</li><li class='price-feature'>Earn affiliate commissions (8%)</li><li class='price-feature'>Basic analytics dashboard</li><li class='price-feature'>UPI payouts (weekly)</li><li class='price-feature'>Access to brand marketplace</li></ul>
+        <a href="#download" class="btn-ghost w-full text-center mt-4 block">Start Free</a>
+      </div>
+      <div class="pricing-card featured reveal">
+        <div class="pricing-badge">Most Popular</div>
+        <h3 class="text-lg font-bold text-white">Creator Premium</h3>
+        <div><span class="price-amount">₹499</span><span class="price-period">/month</span></div>
+        <ul class="flex flex-col gap-2 mt-2"><li class='price-feature'>Everything in Free</li><li class='price-feature'>Higher commissions (up to 15%)</li><li class='price-feature'>Priority brand matching</li><li class='price-feature'>AI caption & content assistant</li><li class='price-feature'>Daily UPI payouts</li><li class='price-feature'>Verified creator badge</li><li class='price-feature'>Dedicated creator support</li></ul>
+        <a href="#download" class="btn-primary w-full text-center mt-4 block">Start 14-Day Free Trial</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-xdark-surface" id="testimonials">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-12 reveal"><p class="section-label">Success Stories</p><h2 class="section-title">Real <span class="grad-green">Results</span></h2></div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="testi-card reveal"><div class="testi-stars">★★★★★</div><p class="testi-text">"I made ₹18,000 in my first month just by posting product stories. My followers already trusted me — Xavio just made it easy to monetize that trust."</p><div class="testi-author"><div class="testi-avatar">P</div><div><p class="text-sm font-semibold text-white">Priya Sharma</p><p class="text-xs text-gray-500">Fashion Creator, Mumbai</p></div></div></div><div class="testi-card reveal"><div class="testi-stars">★★★★★</div><p class="testi-text">"I got my first brand deal worth ₹12,000 in week 2. The brand matching is incredibly accurate — they matched me with brands my audience actually loves."</p><div class="testi-author"><div class="testi-avatar">K</div><div><p class="text-sm font-semibold text-white">Karan Singh</p><p class="text-xs text-gray-500">Tech Creator, Bangalore</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-12 reveal"><p class="section-label">FAQ</p><h2 class="section-title">Common <span class="grad-green">Questions</span></h2></div>
+    <div><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How much can I realistically earn?<span class="faq-icon">+</span></button><div class="faq-a">Creators with 1,000–5,000 followers earn ₹5,000–₹25,000/month. Creators with 10,000+ followers earn ₹25,000–₹1,00,000+/month. It depends on your niche and engagement rate.</div></div><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Do I need a minimum follower count?<span class="faq-icon">+</span></button><div class="faq-a">No minimum. Even creators with 500 followers earn on Xavio because we focus on engagement rate, not just follower count.</div></div><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How quickly do I get paid?<span class="faq-icon">+</span></button><div class="faq-a">Free plan: weekly payouts. Premium plan: daily payouts. All via UPI with no minimum threshold.</div></div><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Can I promote any product?<span class="faq-icon">+</span></button><div class="faq-a">You choose which products to promote. We never force you to promote anything that doesn't fit your brand.</div></div></div>
+  </div>
+</section>
+
+<section class="section bg-xdark-surface text-center" id="download">
+  <div class="max-w-2xl mx-auto reveal">
+    <div class="text-5xl mb-6">🎨</div>
+    <h2 class="section-title"><span class="grad-hero">Start Earning Free Today.</span></h2>
+    <p class="section-sub mx-auto mb-8">Join thousands of creators already earning on Xavio. Free forever. No credit card needed.</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+      <a href="#" class="btn-primary text-base px-8 py-4">📱 Download for iOS</a>
+      <a href="#" class="btn-primary text-base px-8 py-4">🤖 Download for Android</a>
+    </div>
+    <p class="text-xs text-gray-600">Available on iOS 14+ and Android 8+. 4.9★ rating on both stores.</p>
+  </div>
+</section>
+
+<footer class="xfooter">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
+      <div class="col-span-2 md:col-span-1">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="logo-icon">X</span>
+          <span class="text-xl font-black text-white tracking-tight" style="-webkit-text-fill-color:white">avio</span>
+        </div>
+        <p class="text-sm text-gray-500 max-w-xs">India's first social commerce platform. Turn your status into a storefront.</p>
+      </div>
+      <div>
+        <p class="text-sm font-semibold text-white mb-4">Platform</p>
+        <ul class="flex flex-col gap-2">
+          <li><a href="for-creators.html" class="text-sm text-gray-500 hover:text-brand transition-colors">For Creators</a></li>
+          <li><a href="for-sellers.html" class="text-sm text-gray-500 hover:text-brand transition-colors">For Sellers</a></li>
+          <li><a href="for-merchants.html" class="text-sm text-gray-500 hover:text-brand transition-colors">For Merchants</a></li>
+          <li><a href="for-advertisers.html" class="text-sm text-gray-500 hover:text-brand transition-colors">For Advertisers</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-sm font-semibold text-white mb-4">Features</p>
+        <ul class="flex flex-col gap-2">
+          <li><a href="#features" class="text-sm text-gray-500 hover:text-brand transition-colors">Status Stories</a></li>
+          <li><a href="#features" class="text-sm text-gray-500 hover:text-brand transition-colors">Creator Marketplace</a></li>
+          <li><a href="#features" class="text-sm text-gray-500 hover:text-brand transition-colors">Live Commerce</a></li>
+          <li><a href="#features" class="text-sm text-gray-500 hover:text-brand transition-colors">Analytics</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-sm font-semibold text-white mb-4">Company</p>
+        <ul class="flex flex-col gap-2">
+          <li><a href="#" class="text-sm text-gray-500 hover:text-brand transition-colors">About</a></li>
+          <li><a href="#" class="text-sm text-gray-500 hover:text-brand transition-colors">Blog</a></li>
+          <li><a href="#" class="text-sm text-gray-500 hover:text-brand transition-colors">Careers</a></li>
+          <li><a href="#" class="text-sm text-gray-500 hover:text-brand transition-colors">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-sm font-semibold text-white mb-4">Legal</p>
+        <ul class="flex flex-col gap-2">
+          <li><a href="#" class="text-sm text-gray-500 hover:text-brand transition-colors">Privacy Policy</a></li>
+          <li><a href="#" class="text-sm text-gray-500 hover:text-brand transition-colors">Terms of Service</a></li>
+          <li><a href="#" class="text-sm text-gray-500 hover:text-brand transition-colors">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-xs text-gray-600">&copy; 2025 Xavio. All rights reserved. Made with love in India.</p>
+      <div class="flex gap-6">
+        <a href="#" class="text-xs text-gray-600 hover:text-brand transition-colors">Twitter</a>
+        <a href="#" class="text-xs text-gray-600 hover:text-brand transition-colors">Instagram</a>
+        <a href="#" class="text-xs text-gray-600 hover:text-brand transition-colors">LinkedIn</a>
+        <a href="#" class="text-xs text-gray-600 hover:text-brand transition-colors">YouTube</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="sticky-cta" id="stickyCta">
+  <p class="text-sm text-white font-medium hidden md:block">Join 50,000+ users already earning on Xavio</p>
+  <a href="#download" class="btn-primary ml-auto">Start Earning Free</a>
+  <button onclick="document.getElementById('stickyCta').style.display='none'" class="text-gray-500 hover:text-white text-2xl leading-none ml-2">&times;</button>
+</div>
+<div class="exit-modal" id="exitModal">
+  <div class="exit-modal__box">
+    <div class="text-5xl mb-4">🎁</div>
+    <h3 class="text-xl font-black text-white mb-2">Wait — One Last Thing!</h3>
+    <p class="text-sm text-gray-500 mb-6">Get 3 months of Xavio Premium FREE when you sign up today. Limited to the next 47 creators.</p>
+    <a href="#download" class="btn-primary w-full text-center block mb-3">Claim My Spot</a>
+    <button onclick="document.getElementById('exitModal').style.display='none'" class="text-xs text-gray-600 hover:text-white transition-colors">No thanks, I don't want free money</button>
+  </div>
+</div>
+<script>
+function calcAudienceEarnings() {
+  const input = parseFloat(document.getElementById('simInput').value) || 0;
+  const posts = parseFloat(document.getElementById('simPosts').value) || 0;
+  const result = Math.round(input * 0.03 * posts * 4 * 150);
+  const el = document.getElementById('simResult');
+  const amEl = document.getElementById('simAmount');
+  if (result > 0) {
+    amEl.textContent = '₹' + Math.round(result).toLocaleString('en-IN');
+    el.classList.add('show');
+  }
+}
+</script>
+  <script src="assets/js/xavio.js"></script>
 </body>
 </html>
